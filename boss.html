@@ -2,7 +2,12 @@
 <html lang="en">
   <head><title>Odisee Invaders</title></head>
   <body>
-    <h1>Level 1</h1>    
+    <h1>Boss level : Minigun 💀</h1>
+    <style>
+        h1 {
+            color: #ff0000;
+        }
+    </style>    
     <!-- Game canvas -->
     <canvas id="canvas" width="800" height="600"></canvas>    
     <!-- Javascript game logic -->
@@ -179,15 +184,16 @@
       game.backgroundColor = '#808080';
 
       // Setup asteroids array
-      game.asteroidsParts = 8;
-      game.noOfAsteroids = 4;
-      game.asteroidsSpace = 150;
+      game.asteroidsParts = 15;
+      game.noOfAsteroids = 5;
+      game.asteroidsSpace = 125;
 
       // Setup enemies
       game.enemiesEachLine = 10;
-      game.enemyLines = 7;
-      game.enemySpace = 30;
-      game.enemyFireRate = 1000;
+      game.enemyLines = 10;
+      game.enemySpace = 1;
+      game.enemyFireRate = 10;
+      game.playerFireRate = 10;
       game.enemyFireTimer = 0;
       game.enemyDirection = 1;
       game.enemyStep = 5;
@@ -214,8 +220,8 @@
 
         // Check if the player has destroyed all enemies
         if (game.enemies.length == 0) {
-          // Move to level 2
-          location.href = 'level2.html';
+          // Move to leaderboard
+          location.href = 'leaderboard.html';
         }
 
         // Check if the enemies are out of bounds.
@@ -264,7 +270,7 @@
         }
 
         // Enemy fire counter
-        game.enemyFireTimer += Math.random() * 50;
+        game.enemyFireTimer += Math.random() * 500;
         if (game.enemyFireTimer > game.enemyFireRate) {
           game.enemyFireTimer = 0;
           // Fire enemy bullet
