@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-input-placeholder{
+  color: #FFF;
+  opacity: 1;
+}
+.force-opaque::placeholder {
+  opacity: 1;
+}
+
+#navbar ul li::after{
+  content: '';
+  height: 5px;
+  width: 0%;
+  background: #152f4f;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+#navbar ul li:hover::after{
+width: 100%;
+}
+.navscroll h1{
+  text-align: center;
+
+}
+.all{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  background-image: url(https://i.pinimg.com/originals/8d/7a/0a/8d7a0adfe5d3b0bb9b6e0825800a69a5.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  color: #FFF;
+  padding: 0 8%;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px 0;
+
+}
+.logo{
+  width: 130px;
+  height: 130px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+  position: relative;
+  background-color: #152f4f;
+  padding: .7rem 1rem;
+  border-radius: 5rem;
+
+
+}
+nav ul li.welcome{
+  background-color: #21a687;
+}
+nav ul li a{
+  color: #FFF;
+  text-decoration: none;
+}
+nav ul li.logouts a:hover{
+  color: red;
+  fill: red;
+  }
+nav ul li a svg.red:hover{
+  color: red;
+  fill: red;
+}
+.all ul li svg {
+  fill: #FFF;
+  margin: -3px 3px;
+}
+
+/*nav ul li::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #BBEEFF;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+nav ul li:hover::after{
+width: 100%;
+}*/
+
