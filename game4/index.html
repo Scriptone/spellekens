@@ -1,33 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name = "viewport"
-          content ="width = device-width">
-    <link rel="icon" type="image/x-icon" href="../images/logo.png">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Title</title>
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans">
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-<header>
-    <div class="container">
+    <header>
+        <a href="./" class="logo">
+            <h1><img src="./images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
+        </a>
         <nav>
-            <ul>
-                <li> <a href="../"><img src="../images/logo.png" alt="logo spellekens" width = "100"></a> </li>
-
-                <li> <p><a href="../about" style="text-decoration: none">about us</a></p> </li>
+            <ul class="nav">
+                <li><a href="./" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="./about"><i class="fa fa-user"></i>About us</a></li>
+                <li><a href="./spellen"><i class="fa fa-folder"></i>Spellen</a></li>
+                <li><a href="./chatbot"><i class="fa fa-question-circle"></i>Help desk</a></li>
             </ul>
-        </nav>
-    </div>
+            <div class="nav-line"></div>
+            <ul class="help">
+                <li>
+                    <a href="./contact" class="button">Contact</a>
+                </li>
+                <li>
+                    <a href="./login/index.php" class="button login"><i class="fa fa-user"></i>Login</a>
+                </li>
+            </ul>
 
-</header>
+        </nav>
+    </header>
+
+
 <main>
 
+	<div class="grond">
+		<div id="cirkel" onclick="count()"></div>
+	</div>
+	<div class="details">
+		<h1>TAP THE GIGACHAD</h1>
+		<h3>Click on a difficulty to start the game</h3>
+		<div class="level">
+			<button onclick="easy()">EASY</button>
+			<button onclick="medium()">MEDIUM</button>
+			<button onclick="hard()">HARD</button>
+		</div>
+		<div class="display_score">
+			<h2>Score</h2>
+			<h2 id="score">0</h2>
+		</div>
+		<button onclick="restart()">RESTART</button>
+	</div>
+
+	<script>
+
+		// Level van het spel = "Easy = gemakkelijk"
+		function easy() {
+			document.getElementById('cirkel')
+				.style.animationDuration = '20s';
+			document.getElementById('cirkel')
+				.className = 'rond';
+		}
+
+		// Level van het spel = "Medium = Medium"
+		function medium() {
+			document.getElementById('cirkel')
+				.style.animationDuration = '15s';
+			document.getElementById('cirkel')
+				.className = 'rond';
+		}
+
+		// Level van het spel = "Hard = Moeilijk"
+		function hard() {
+			document.getElementById('cirkel')
+				.style.animationDuration = '10s';
+			document.getElementById('cirkel')
+				.className = 'rond';
+		}
+
+		let cnt = 0;
+
+		// Tel de score op
+		// and toon de score op het scherm
+		function count() {
+			cnt = parseInt(1) + parseInt(cnt);
+			var scr = document.getElementById('score');
+			scr.innerHTML = cnt;
+		}
+
+		// Restart het spel door resfresh the pagina
+		function restart() {
+			window.location.reload();
+		}
+	</script>
+		
 </main>
-<footer>
-    <div class="container">
-        <p>Created by Anuwat, Arne, Phoenix and Robin.</p>
-    </div>
-</footer>
 </body>
+	
 </html>
