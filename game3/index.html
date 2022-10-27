@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name = "viewport"
           content ="width = device-width">
-    <link rel="icon" type="image/x-icon" href="/logo.png">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/tic-tac-toe.css">
     <title>Title</title>
 </head>
 <body>
@@ -13,16 +14,62 @@
     <div class="container">
         <nav>
             <ul>
-                <li> <a href="../"><img src="/logo.png" alt="logo spellekens" width = "100"></a> </li>
+                <li> <a href="../"><img src="../images/logo.png" alt="logo spellekens" width = "100"></a> </li>
 
-                <li> <p><a href="/about" style="text-decoration: none">about us</a></p> </li>
+                <li> <p><a href="../about" style="text-decoration: none">about us</a></p> </li>
             </ul>
         </nav>
     </div>
 
 </header>
 <main>
+    <div class="start-game">
+        <h1 class="text-light">Select Character</h1>
+        <div class="profile">
+            <div class="img">
+                <img src="../images/tic-tac-toe/bart.png" class="id" data-id="x" alt="">
+                <img src="../images/tic-tac-toe/davy.png" class="id" data-id="y" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/tic-tac-toe/peter.png" class="id" data-id="x2" alt="">
+                <img src="../images/tic-tac-toe/peter2.png" class="id" data-id="y2" alt="">
+            </div>
+        </div>
 
+        <button class="primary-btn" id="startBtn">Start Game</button>
+    </div>
+
+    <!-- game board -->
+    <div class="container">
+        <div class="board" id="board">
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+        </div>
+    </div>
+
+    <!-- Draw Window -->
+    <div class="draw-msg">
+        <div class="draw">
+            <h1 class="text-center text-yellow">Draw</h1>
+        </div>
+        <button id="drawBtn" class="primary-btn">Play Again</button>
+    </div>
+
+    <!-- winner Window -->
+    <div class="winner-msg">
+        <h1 class="text-center text-yellow">Winner</h1>
+        <div class="winner"></div>
+        <button id="restartBtn" class="primary-btn">Restart</button>
+    </div>
+
+    <script type="module" src="../JS_bestanden/tic-tac-toe/index.js"></script>
 </main>
 <footer>
     <p>Created by Anuwat, Arne, Phoenix and Robin.</p>
