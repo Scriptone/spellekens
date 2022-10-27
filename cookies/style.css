@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 html
@@ -11,8 +9,6 @@ html
     font-family: 'Poppins' , 'Krono One' , sans-serif ;
 }
 
-body {
-}
 #cookiePopup {
   background-color: #ffffff;
   position: absolute;
