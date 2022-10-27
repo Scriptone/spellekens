@@ -9,19 +9,30 @@
     <link rel="stylesheet" href="../css/tic-tac-toe.css">
     <title>Title</title>
 </head>
-<body>
-<header>
-    <div class="container">
+<body onload="navline();">
+    <header>
+        <a href="./" class="logo">
+            <h1><img src="../images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
+        </a>
         <nav>
-            <ul>
-                <li> <a href="../"><img src="../images/logo.png" alt="logo spellekens" width = "100"></a> </li>
-
-                <li> <p><a href="../about" style="text-decoration: none">about us</a></p> </li>
+            <ul class="nav">
+                <li><a href="../" ><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="../about"><i class="fa fa-user"></i>About us</a></li>
+                <li><a href="../spellen" class="active"><i class="fa fa-folder"></i>Games</a></li>
+                <li><a href="../chatbot"><i class="fa fa-question-circle"></i>Help desk</a></li>
+            </ul>                                                                                                                                                       
+            <div class="nav-line"></div>
+            <ul class="help">
+                <li>
+                    <a href="../contact" class="button">Contact</a>
+                </li>
+                <li>
+                    <a href="../login/index.php" class="button login"><i class="fa fa-user"></i>Login</a>
+                </li>
             </ul>
-        </nav>
-    </div>
 
-</header>
+        </nav>
+    </header>
 <main>
     <div class="start-game">
         <h1 class="text-light">Select Character</h1>
