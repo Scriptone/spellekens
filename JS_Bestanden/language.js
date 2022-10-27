@@ -1,10 +1,19 @@
-var x = document.getElementsByClassName("en")[0];
-var y = document.getElementsByClassName("nl")[0];
-function myFunction() {
-    x.style.display = "none";
-    y.style.display = "block";
-}
-function myFunction1(){
-    x.style.display = "block";
-    y.style.display = "none";
-}
+function update() {
+    const lang = document.getElementById('langselector')
+    const value = lang.options[lang.selectedIndex].value;
+    console.log(value);
+
+    const allInBody = document.querySelectorAll('body > *');
+    for (const element of allInBody) {
+      const langAttribute = element.getAttribute("lang");
+      if (langAttribute) {
+        console.log(langAttribute, value)
+        if (value === langAttribute) {
+          element.style.display = "block"
+        } else {
+          element.style.display = "none"
+        }
+      }
+    }
+  }
+  update()
