@@ -1,4 +1,6 @@
+console.log("LOL");
 function navline() {
+    console.log("Navline init");
     var navElements = document.querySelectorAll("nav ul li");
     var navElementsA = document.querySelectorAll("nav ul li a");
     const navLine = document.querySelector(".nav-line");
