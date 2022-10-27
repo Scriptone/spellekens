@@ -1,55 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <meta name = "viewport"
-          content ="width = device-width">
-    <link rel="icon" type="image/x-icon" href="/logo.png">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans">
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="./css/styles.css" rel="stylesheet">
+    <script src="./JS_Bestanden/navline.js"></script>
+    <script src="./JS_Bestanden/slider.js"></script>
     <title>Spellekens</title>
-
 </head>
-<body>
 
-<header>
-    <div class="container">
-    <nav>
-        <ul>
-            <li> <a href="./"><img src="/logo.png" alt="logo spellekens" width = "100"></a> </li>
+<body onload="navline();">
+    <header>
+        <a href="./" class="logo">
+            <h1><img src="./images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
+        </a>
+        <nav>
+            <ul class="nav">
+                <li><a href="./" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="./about"><i class="fa fa-user"></i>About us</a></li>
+                <li><a href="./spellen"><i class="fa fa-folder"></i>Spellen</a></li>
+                <li><a href="./chatbot"><i class="fa fa-question-circle"></i>Help desk</a></li>
+            </ul>
+            <div class="nav-line"></div>
+            <ul class="help">
+                <li>
+                    <a href="./contact" class="button">Contact</a>
+                </li>
+                <li>
+                    <a href="./login" class="button login"><i class="fa fa-user"></i>Login</a>
+                </li>
+            </ul>
 
-            <li> <p><a href="/about" style="text-decoration: none">about us</a></p> </li>
-        </ul>
-    </nav>
-    </div>
+        </nav>
+    </header>
 
-</header>
+    <main>
+        <section class="search">
+            <h1>Odisee Games</h1>
+            <input type="text" class="search-input" placeholder="Search for game">
+        </section>
+        <section class="trailer-container">
+            <h2>Game trailers</h2>
+            <section class="trailers">
 
-<main>
-    <h1>   SPELLEKENS</h1>
-<div class="games">
-    <ul>
-        <li> <p>Game1</p>
-            <a href="/game1"> <img src="" alt="game1"> </a>
-        </li>
-        <li> <p>Game2</p>
-            <a href="/game2"> <img src="" alt="game2"> </a>
-        </li>
-        <li> <p>Game3</p>
-            <a href="/game3"> <img src="" alt="game3"> </a>
-        </li>
-        <li> <p>Game4</p>
-            <a href="/game4"> <img src="" alt="game4"> </a>
-        </li>
-        <li> <p>gta6</p>
-            <a href="/gta6"> <img src="./images/gta6.png" alt="gta6" width="150"> </a>
-        </li>
-    </ul>
-</div>
-</main>
+                <section class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
 
-<footer>
-<p>Created by Anuwat, Arne, Phoenix and Robin.</p>
-</footer>
+                        <div class="slide first">
+                            <section class="trailer">
+                                <section class="text">
+                                    <h3>Trailer name</h3>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non recusandae at
+                                        veniam quam. Quia
+                                        totam
+                                        quaerat recusandae earum reprehenderit quis distinctio voluptatum maxime? Dolor
+                                        eius possimus
+                                        illum
+                                        molestiae voluptate doloremque.
+                                    </p>
+                                </section>
+                                <iframe width="700" height="315" src="https://www.youtube.com/embed/6LxdLV8jOEM"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </section>
+                        </div>
+                        <div class="slide">
+                            <section class="trailer">
+                                <section class="text">
+                                    <h3>Trailer name</h3>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non recusandae at
+                                        veniam quam. Quia
+                                        totam
+                                        quaerat recusandae earum reprehenderit quis distinctio voluptatum maxime? Dolor
+                                        eius possimus
+                                        illum
+                                        molestiae voluptate doloremque.
+                                    </p>
+                                </section>
+                                <iframe width="700" height="315" src="https://www.youtube.com/embed/6LxdLV8jOEM"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </section>
+                        </div>
+                        <div class="slide">
+                            <section class="trailer">
+                                <section class="text">
+                                    <h3>Trailer name</h3>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non recusandae at
+                                        veniam quam. Quia
+                                        totam
+                                        quaerat recusandae earum reprehenderit quis distinctio voluptatum maxime? Dolor
+                                        eius possimus
+                                        illum
+                                        molestiae voluptate doloremque.
+                                    </p>
+                                </section>
+                                <iframe width="700" height="315" src="https://www.youtube.com/embed/6LxdLV8jOEM"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </section>
+                        </div>
+                        <div class="slide">
+                            <section class="trailer">
+                                <section class="text">
+                                    <h3>Trailer name</h3>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non recusandae at
+                                        veniam quam. Quia
+                                        totam
+                                        quaerat recusandae earum reprehenderit quis distinctio voluptatum maxime? Dolor
+                                        eius possimus
+                                        illum
+                                        molestiae voluptate doloremque.
+                                    </p>
+                                </section>
+                                <iframe width="700" height="315" src="https://www.youtube.com/embed/6LxdLV8jOEM"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </section>
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </section>
+
+
+            </section>
+        </section>
+        <section class="game-container">
+            <h2>Games</h2>
+            <section class="games">
+
+                <section class="slider">
+                    <div class="slides">
+                        <input type="radio" name="game-radio-btn" id="game-radio1">
+                        <input type="radio" name="game-radio-btn" id="game-radio2">
+                        <input type="radio" name="game-radio-btn" id="game-radio3">
+                        <input type="radio" name="game-radio-btn" id="game-radio4">
+
+                        <div class="slide first">
+                            <section class="game">
+                                <section class="text">
+                                    <h3>Game name</h3>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non recusandae at
+                                        veniam quam. Quia
+                                        totam
+                                        quaerat recusandae earum reprehenderit quis distinctio voluptatum maxime? Dolor
+                                        eius possimus
+                                        illum
+                                        molestiae voluptate doloremque.
+                                    </p>
+                                </section>
+                                <img src="" alt="">
+                            </section>
+                        </div>
+                        <div class="slide">
+                            <section class="game">
+                                <section class="text">
+                                    <h3>Trailer name</h3>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non recusandae at
+                                        veniam quam. Quia
+                                        totam
+                                        quaerat recusandae earum reprehenderit quis distinctio voluptatum maxime? Dolor
+                                        eius possimus
+                                        illum
+                                        molestiae voluptate doloremque.
+                                    </p>
+                                </section>
+                                <img src="" alt="">
+                            </section>
+                        </div>
+                        <div class="slide">
+                            <section class="game">
+                                <section class="text">
+                                    <h3>Trailer name</h3>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non recusandae at
+                                        veniam quam. Quia
+                                        totam
+                                        quaerat recusandae earum reprehenderit quis distinctio voluptatum maxime? Dolor
+                                        eius possimus
+                                        illum
+                                        molestiae voluptate doloremque.
+                                    </p>
+                                </section>
+                                <img src="" alt="">
+                            </section>
+                        </div>
+                        <div class="slide">
+                            <section class="game">
+                                <section class="text">
+                                    <h3>Trailer name</h3>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non recusandae at
+                                        veniam quam. Quia
+                                        totam
+                                        quaerat recusandae earum reprehenderit quis distinctio voluptatum maxime? Dolor
+                                        eius possimus
+                                        illum
+                                        molestiae voluptate doloremque.
+                                    </p>
+                                </section>
+                                <img src="" alt="">
+                            </section>
+                        </div>
+                        <div class="navigation-auto">
+                            <div class="game-auto-btn1"></div>
+                            <div class="game-auto-btn2"></div>
+                            <div class="game-auto-btn3"></div>
+                            <div class="game-auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="game-radio1" class="manual-btn"></label>
+                        <label for="game-radio2" class="manual-btn"></label>
+                        <label for="game-radio3" class="manual-btn"></label>
+                        <label for="game-radio4" class="manual-btn"></label>
+                    </div>
+                </section>
+
+
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Copyright &copy; 2022 Spellekens | Designed by team Spellekens | </h1>
+        <section class="social-icons">
+            <a href="https://www.facebook.com/" title="facebook link" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" title="instagram link" target="_blank"><i
+                    class="fa fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" title="twitter link" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" title="linkedin link" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.twitch.tv/" title="twitch link" target="_blank"><i class="fa fa-twitch"></i></a>
+        </section>
+    </footer>
 
 </body>
+
 </html>
