@@ -1,4 +1,3 @@
-console.log("LOL");
 function navline() {
     console.log("Navline init");
     var navElements = document.querySelectorAll("nav ul li");
@@ -49,3 +48,4 @@ function navline() {
     var activeElement = document.getElementsByClassName("active")[0]
     positionNavLine(activeElement);
 }
+navline();
