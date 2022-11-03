@@ -329,7 +329,7 @@ main .search {
 .our-team img {
     height: 10rem;
     width: 10rem;
-    object-fit: cover;
+    object-fit: cover ;
 }
 
 /* footer styling */
