@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width">
-    <link rel="icon" type="image/x-icon" href="/logo.png">
-    
+    <link rel="icon" type="image/x-icon" href="../logo.png">
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
         integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
         integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
     <title>About us</title>
@@ -32,7 +33,7 @@
             <div class="nav-line"></div>
             <ul class="help">
                 <li>
-                    <a href="../contact" class="button">Contact</a>
+                    <a href="../about#contactform" class="button">Contact</a>
                 </li>
                 <li>
                     <a href="../login/index.php" class="button login"><i class="fa fa-user"></i>Login</a>
@@ -43,26 +44,60 @@
         <script src="../JS_Bestanden/navline.js"></script>
     </header>
     <main>
-        <section class="header1 cid-qyvisAZ1Bw" id="header1-7" data-rv-view="758">
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="mbr-white col-md-10">
-                        <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-5">Responsive
-                            Bootstrap About Us Page Template</h1>
-                        <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2">MEET OUR
-                            TEAM</h3>
-                        <p class="mbr-text align-center pb-3 mbr-fonts-style display-5">
-                            We are all very different. We were born in different cities, at different times, we love
-                            different music, food, movies. But we have something that unites us all. It is our company.
-                            We are its heart. We are not just a team, we are a family.
-                        </p>
-                        <div class="mbr-section-btn align-center"><a class="btn btn-md btn-black-outline display-4"
-                                href="../contact">
-                                CONTACT US</a></div>
+        <section id="team" class="team">
+            <div class="container aos-init aos-animate" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Our Team</h2>
+                    <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt
+                        quis dolorem dolore earum</p>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member"> <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                            <h4>Walter White</h4> <span>Web Development</span>
+                            <div class="social">
+                                <a href="#" title="twitter"><i class="bi bi-twitter"></i></a>
+                                <a href="#" title="facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" title="instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" title="linkedin"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member"> <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                            <h4>Sarah Jhinson</h4> <span>Marketing</span>
+                            <div class="social">
+                                <a href="#" title="twitter"><i class="bi bi-twitter"></i></a>
+                                <a href="#" title="facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" title="instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" title="linkedin"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member"> <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                            <h4>William Anderson</h4> <span>Content</span>
+                            <div class="social">
+                                <a href="#" title="twitter"><i class="bi bi-twitter"></i></a>
+                                <a href="#" title="facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" title="instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" title="linkedin"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                        <div class="member"> <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                            <h4>Amanda Jepson</h4> <span>Accountant</span>
+                            <div class="social">
+                                <a href="#" title="twitter"><i class="bi bi-twitter"></i></a>
+                                <a href="#" title="facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" title="instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" title="linkedin"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="features1 cid-qyvcAqZyNq" id="features1-1" data-rv-view="764">
 
@@ -135,7 +170,8 @@
             <div class="container text-center">
 
 
-                <div class="carousel slide" data-ride="carousel" role="listbox" id="testimonials-slider1-3-carousel" aria-label = "carousel">
+                <div class="carousel slide" data-ride="carousel" role="listbox" id="testimonials-slider1-3-carousel"
+                    aria-label="carousel">
                     <div class="carousel-inner">
 
 
@@ -218,11 +254,7 @@
                 </div>
             </div>
         </section>
-        <section class="mbr-section form1 cid-qyvf9K0GGo" id="form1-4" data-rv-view="791">
-
-
-
-
+        <section class="mbr-section form1 cid-qyvf9K0GGo" id="contactform" data-rv-view="791">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="title col-12 col-lg-8">
@@ -239,40 +271,40 @@
                             Thanks for filling out the form!
                         </div>
 
-                        <form class="mbr-form" action="https://mobirise.com/" method="post"
-                            data-form-title="Mobirise Form"><input type="hidden" data-form-email="true"
+                        <form class="mbr-form" action="./thanks" method="post" data-form-title="Mobirise Form"><input
+                                type="hidden" data-form-email="true"
                                 value="R46ImfT8lRYLhZq6vpVE63L0V35bOdmwHjgn18Tp/HdDujD3JfWe/8bm7YjE2vjZZ7JFQMRNRIinYQUh3aNa2qi1GshxArFhHAffNuiFsZiNLfMCF8KElmS7V7lbqBIL">
                             <div class="row row-sm-offset">
                                 <div class="col-md-4 multi-horizontal" data-for="name">
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7"
-                                            for="name-form1-4">Name</label>
+                                            for="name-contactform">Name</label>
                                         <input type="text" class="form-control" name="name" data-form-field="Name"
-                                            required="" id="name-form1-4">
+                                            required="" id="name-contactform">
                                     </div>
                                 </div>
                                 <div class="col-md-4 multi-horizontal" data-for="email">
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7"
-                                            for="email-form1-4">Email</label>
+                                            for="email-contactform">Email</label>
                                         <input type="email" class="form-control" name="email" data-form-field="Email"
-                                            required="" id="email-form1-4">
+                                            required="" id="email-contactform">
                                     </div>
                                 </div>
                                 <div class="col-md-4 multi-horizontal" data-for="phone">
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7"
-                                            for="phone-form1-4">Phone</label>
+                                            for="phone-contactform">Phone</label>
                                         <input type="tel" class="form-control" name="phone" data-form-field="Phone"
-                                            id="phone-form1-4">
+                                            id="phone-contactform">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group" data-for="message">
                                 <label class="form-control-label mbr-fonts-style display-7"
-                                    for="message-form1-4">Message</label>
+                                    for="message-contactform">Message</label>
                                 <textarea type="text" class="form-control" name="message" rows="7"
-                                    data-form-field="Message" id="message-form1-4"></textarea>
+                                    data-form-field="Message" id="message-contactform"></textarea>
                             </div>
 
                             <span class="input-group-btn"><button href="" type="submit"
@@ -281,7 +313,7 @@
                     </div>
                 </div>
             </div>
-        <!-- </section> -->
+            <!-- </section> -->
     </main>
     <footer>
         <h1>Copyright &copy; 2022 Spellekens | Designed by team Spellekens | </h1>
