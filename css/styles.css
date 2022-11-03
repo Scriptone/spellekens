@@ -326,6 +326,12 @@ main .search {
     border-radius: 1rem;
 }
 
+.our-team img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+}
+
 /* footer styling */
 /*Footer*/
 .social-icons {
