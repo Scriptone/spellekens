@@ -1,45 +1,37 @@
 <?php
 
-// Constanten (connectie-instellingen databank)
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'contact2');
-
-
-date_default_timezone_set('Europe/Brussels');
-
-// Verbinding maken met de databank
-try {
-    $db = new PDO('mysql:host=' . DB_HOST .';dbname=' . DB_NAME . ';charset=utf8mb4', DB_USER, DB_PASS);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    echo 'Verbindingsfout: ' .  $e->getMessage();
-    exit;
-}
-
-// Opvragen van alle taken uit de tabel tasks
-$stmt = $db->prepare('SELECT * FROM messages ORDER BY added_on DESC');
-$stmt->execute();
-$items = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+$name = isset($_GET['name']) ? $_GET['name'] : false;
+$mail = isset($_GET['mail']) ? $_GET['mail'] : false;
+$item = isset($_GET['item ']) ? $_GET['item '] : false;
+$game = isset($_GET['game']) ? $_GET['game'] : false;
+$message = isset($_GET['message']) ? $_GET['message'] : false;
+$phone = isset($_GET['phone']) ? $_GET['phone'] : false;
 
 ?><!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Mijn berichten</title>
+    <title>Testform</title>
+    <meta charset="UTF-8"/>
+
 </head>
 <body>
-    <?php if (sizeof($items) > 0) { ?>
-    <ul>
-        <?php foreach ($items as $item) { ?>
-        <li><?php echo htmlentities($item['sender']); ?>: <?php echo htmlentities($item['mail']); ?>: <?php echo htmlentities($item['phone']); ?>:<?php echo htmlentities($item['game']); ?>:<?php echo htmlentities($item['item']); ?>:<?php echo htmlentities($item['message']); ?> (<?php echo (new Datetime($item['added_on']))->format('d-m-Y H:i:s'); ?>)</li>
-        <?php }?>
-    </ul>
-    <?php
-    } else {
-        echo '<p>No message has been reseaved .</p>' . PHP_EOL;
-    }
-    ?>
+<header>
+
+</header>
+<div class="container">
+<?php
+
+// Name sent in
+
+echo '<p> Thank you ' . htmlentities($name) . '</p>';
+echo '<p> email:' .htmlentities($mail) . '</p>';
+echo '<p> phone:' . htmlentities($phone) . '</p>';
+echo '<p> game:' .htmlentities($game) . '</p>';
+echo '<p> item:' .htmlentities($item) . '</p>';
+echo '<p> your message:' .htmlentities($message) . '</p>';
+?>
+
+
+</div>
 </body>
+</html>
