@@ -10,7 +10,7 @@ setInterval(() => {
     if (counter > 6) {
         counter = 1;
     }
-}, 5000);
+}, 10000);
 
 
 
