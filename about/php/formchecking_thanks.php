@@ -8,12 +8,12 @@ define('DB_NAME', 'coworking-about');
 
 date_default_timezone_set('Europe/Brussels');
 
-// Verbinding maken met de databank
+// Verbinding maken met de databank 
 try {
     $db = new PDO('mysql:host=' . DB_HOST .';dbname=' . DB_NAME . ';charset=utf8mb4', DB_USER, DB_PASS);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    echo 'Verbindingsfout: ' .  $e->getMessage();
+    echo 'Verbindingsfout: ' .  $e->getMessage(); 
     exit;
 }
 
