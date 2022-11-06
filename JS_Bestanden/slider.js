@@ -7,7 +7,7 @@ setInterval(() => {
     radioButton.checked = true;
     gameRadioButton.checked = true;
     counter++;
-    if (counter > 4) {
+    if (counter > 6) {
         counter = 1;
     }
 }, 5000);
