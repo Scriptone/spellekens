@@ -79,7 +79,7 @@ if (isset($_POST['btnSubmit'])) {
 
         // the query succeeded, redirect to this very same page
         if ($db->lastInsertId() !== 0) {
-            header('Location: ./formchecking_thanks.php?name=' . urlencode($name));
+            header('Location: ./php/formchecking_thanks.php?name=' . urlencode($name));
             exit();
         } // the query failed
         else {
@@ -300,7 +300,7 @@ if (isset($_POST['btnSubmit'])) {
                             Thanks for filling out the form!
                         </div>
 
-                        <form class="mbr-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" data-form-title="Mobirise Form" >
+                        <form class="mbr-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" data-form-title="Contact-form" >
                             <div class="row row-sm-offset">
                                 <div class="col-md-4 multi-horizontal" data-for="name">
                                     <div class="form-group">
