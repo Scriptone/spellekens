@@ -361,6 +361,9 @@ main .search {
 .thanks {
     font-weight: bold;
     font-size: 1.4rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: .1rem;
     box-shadow: 0 0 1rem #000A;
