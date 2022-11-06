@@ -22,15 +22,12 @@ $stmt = $db->prepare('SELECT * FROM messages ORDER BY added_on DESC');
 $stmt->execute();
 $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-foreach ($items as $key => $value) {
-    echo "Key is: ". $key ." value is: ". $value ."\n";
-}
-$name = isset($_GET['name']) ? $_GET['name'] : false;
-$mail = isset($_GET['mail']) ? $_GET['mail'] : false;
-$item = isset($_GET['item ']) ? $_GET['item '] : false;
-$game = isset($_GET['game']) ? $_GET['game'] : false;
-$message = isset($_GET['message']) ? $_GET['message'] : false;
-$phone = isset($_GET['phone']) ? $_GET['phone'] : false;
+$name = $items['name'];
+$mail = $items['mail'];
+$item = $items['item '];
+$game = $items['game'];
+$message = $items['message'];
+$phone = $items['phone'];
 
 ?><!DOCTYPE html>
 <html lang="en">
