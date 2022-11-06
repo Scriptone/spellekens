@@ -357,8 +357,12 @@ main .search {
     object-fit: cover;
 }
 
-.thanks h2 {
+
+.thanks {
     font-size: 1.4rem;
+}
+.thanks h2 {
+    
     font-weight: bold;
     margin-bottom: .5em;
     text-transform: uppercase;
@@ -366,7 +370,6 @@ main .search {
 }
 
 .thanks p {
-    font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 1em;
     text-transform: uppercase;
