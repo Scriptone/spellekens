@@ -28,10 +28,10 @@ $name = isset($_GET["name"]) ? $_GET["name"] : false;
         </a>
         <nav>
             <ul class="nav">
-                <li><a href="../"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="./" class="active"><i class="fa fa-user"></i>About us</a></li>
-                <li><a href="../spellen"><i class="fa fa-folder"></i>Games</a></li>
-                <li><a href="../chatbot"><i class="fa fa-question-circle"></i>Help desk</a></li>
+                <li><a href="../../"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="../" class="active"><i class="fa fa-user"></i>About us</a></li>
+                <li><a href="../../spellen"><i class="fa fa-folder"></i>Games</a></li>
+                <li><a href="../../chatbot"><i class="fa fa-question-circle"></i>Help desk</a></li>
             </ul>
             <div class="nav-line"></div>
             <ul class="help">
@@ -39,12 +39,12 @@ $name = isset($_GET["name"]) ? $_GET["name"] : false;
                     <a href="../about#contactform" class="button">Contact</a>
                 </li>
                 <li>
-                    <a href="../login/index.php" class="button login"><i class="fa fa-user"></i>Login</a>
+                    <a href="../../login/index.php" class="button login"><i class="fa fa-user"></i>Login</a>
                 </li>
             </ul>
 
         </nav>
-        <script src="../JS_Bestanden/navline.js"></script>
+        <script src="../../JS_Bestanden/navline.js"></script>
     </header>
     <main>
         <div class="container">
