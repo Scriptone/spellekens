@@ -23,7 +23,7 @@ $name = isset($_GET["name"]) ? $_GET["name"] : false;
 </head>
 <body>
     <header>
-        <a href="../" class="logo">
+        <a href="../../" class="logo">
             <h1><img src="../images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
         </a>
         <nav>
