@@ -379,15 +379,15 @@ if (isset($_POST['btnSubmit'])) {
             <!-- </section> -->
     </main>
     <footer>
-        <h1>Copyright &copy; 2022 Spellekens | Designed by team Spellekens | </h1>
-        <section class="social-icons">
+        <p>Copyright &copy; 2022 Spellekens | Designed by team Spellekens | </p>
+        <div class="social-icons">
             <a href="https://www.facebook.com/" title="facebook link" target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="https://www.instagram.com/" title="instagram link" target="_blank"><i
                     class="fa fa-instagram"></i></a>
             <a href="https://www.twitter.com/" title="twitter link" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="https://www.linkedin.com/" title="linkedin link" target="_blank"><i class="fa fa-linkedin"></i></a>
             <a href="https://www.twitch.tv/" title="twitch link" target="_blank"><i class="fa fa-twitch"></i></a>
-        </section>
+        </div>
     </footer>
 </body>
 

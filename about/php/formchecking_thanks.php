@@ -1,59 +1,74 @@
 <?php
-// Constanten (connectie-instellingen databank)
-define('DB_HOST', 'localhost');
-define('DB_USER', 'coworking');
-define('DB_PASS', 'Ii3m8j08^');
-define('DB_NAME', 'coworking-about'); 
 
+$name = isset($_GET["name"]) ? $_GET["name"] : false;
 
-date_default_timezone_set('Europe/Brussels');
-
-// Verbinding maken met de databank 
-try {
-    $db = new PDO('mysql:host=' . DB_HOST .';dbname=' . DB_NAME . ';charset=utf8mb4', DB_USER, DB_PASS);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    echo 'Verbindingsfout: ' .  $e->getMessage(); 
-    exit;
-}
-
-// Opvragen van alle taken uit de tabel tasks
-$stmt = $db->prepare('SELECT * FROM messages ORDER BY added_on DESC');
-$stmt->execute();
-$items = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-$name = $items['name'];
-$mail = $items['mail'];
-$item = $items['item '];
-$game = $items['game'];
-$message = $items['message'];
-$phone = $items['phone'];
 
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Testform</title>
-    <meta charset="UTF-8"/>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width">
+    <link rel="icon" type="image/x-icon" href="../logo.png">
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+        integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <title>Contact form</title>
 </head>
 <body>
-<header>
+    <header>
+        <a href="../" class="logo">
+            <h1><img src="../images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
+        </a>
+        <nav>
+            <ul class="nav">
+                <li><a href="../"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="./" class="active"><i class="fa fa-user"></i>About us</a></li>
+                <li><a href="../spellen"><i class="fa fa-folder"></i>Games</a></li>
+                <li><a href="../chatbot"><i class="fa fa-question-circle"></i>Help desk</a></li>
+            </ul>
+            <div class="nav-line"></div>
+            <ul class="help">
+                <li>
+                    <a href="../about#contactform" class="button">Contact</a>
+                </li>
+                <li>
+                    <a href="../login/index.php" class="button login"><i class="fa fa-user"></i>Login</a>
+                </li>
+            </ul>
 
-</header>
-<div class="container">
-<?php
+        </nav>
+        <script src="../JS_Bestanden/navline.js"></script>
+    </header>
+    <main>
+        <div class="container">
+        <?php
 
-// Name sent in
+        // Name sent in
 
-echo '<p> Thank you ' . htmlentities($name) . '</p>';
-echo '<p> email:' .htmlentities($mail) . '</p>';
-echo '<p> phone:' . htmlentities($phone) . '</p>';
-echo '<p> game:' .htmlentities($game) . '</p>';
-echo '<p> item:' .htmlentities($item) . '</p>';
-echo '<p> your message:' .htmlentities($message) . '</p>';
-?>
+        echo '<p> Thank you ' . htmlentities($name) . '</p>';
+        ?>
 
 
-</div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2022 Spellekens | Designed by team Spellekens | </p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" title="facebook link" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" title="instagram link" target="_blank"><i
+                    class="fa fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" title="twitter link" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" title="linkedin link" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.twitch.tv/" title="twitch link" target="_blank"><i class="fa fa-twitch"></i></a>
+        </div>
+    </footer>
+
 </body>
 </html>
