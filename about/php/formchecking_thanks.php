@@ -47,16 +47,25 @@ $name = isset($_GET["name"]) ? $_GET["name"] : false;
         <script src="../../JS_Bestanden/navline.js"></script>
     </header>
     <main>
-        <div class="container">
-        <?php
+        <section class="thanks">
+            <h2>Result</h2>
 
-        // Name sent in
+			<?php
 
-        echo '<p> Thank you ' . htmlentities($name) . '</p>';
-        ?>
+				// Name sent in
+				if ($name) {
+					echo '<h2>Thank you ' . htmlentities($name). '</h2>';
+				}
 
-
-        </div>
+				// Nothing sent in
+				else {
+					echo '<h2>Thank you, stranger</h2>';
+				}
+				
+			?>
+			<p>Your form was successfully sent!</p>
+			<a href="../" class="button">Go back</a>
+		</section>
     </main>
     <footer>
         <p>Copyright &copy; 2022 Spellekens | Designed by team Spellekens | </p>

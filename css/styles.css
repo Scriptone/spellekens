@@ -36,26 +36,31 @@ header {
     border-radius: 0px 0px 1.5rem 1.5rem;
 
 }
+
 #map {
     height: 500px;
     width: 500px;
 }
-#canvas{
+
+#canvas {
     background-color: #fff;
     width: 100%;
     height: 100%;
     cursor: none;
 }
-.nl{
+
+.nl {
     display: none;
 }
+
 header a {
 
     font-weight: bold;
     color: inherit;
     text-decoration: none;
 }
-img{
+
+img {
     width: 5rem;
 }
 
@@ -65,7 +70,7 @@ header h1 {
     letter-spacing: 1px;
     cursor: pointer;
     align-items: center;
-    
+
 
 }
 
@@ -77,15 +82,17 @@ nav {
     text-decoration: none
 }
 
-.nav, .help {
+.nav,
+.help {
     padding: 0 1rem;
     display: flex;
     align-items: center;
 }
 
-.nav li, .help li {
+.nav li,
+.help li {
     list-style-type: none;
-    width:fit-content;
+    width: fit-content;
     padding: 0 0;
     margin: 0 0;
     justify-content: flex-start;
@@ -100,7 +107,7 @@ nav {
     letter-spacing: 1px;
     padding: .8rem .5rem;
     margin: 0 0;
-    
+
     transition: all .3s ease-in-out;
 }
 
@@ -110,6 +117,7 @@ nav {
     height: fit-content;
     width: fit-content;
 }
+
 .nav-line {
     display: none;
     background-color: #152f4f;
@@ -127,7 +135,7 @@ nav ul a:focus-visible {
 .button {
     position: relative;
     display: inline-block;
-    background-color:#21a687;
+    background-color: #21a687;
     color: #FFF;
     text-decoration: none;
     letter-spacing: 1px;
@@ -141,15 +149,16 @@ nav ul a:focus-visible {
 }
 
 .login {
-    background-color:#152f4f;
+    background-color: #152f4f;
 }
 
 .button i {
     padding: 0 .5rem;
     height: fit-content;
     width: fit-content;
-    color:#fff;
+    color: #fff;
 }
+
 nav .button {
     margin-left: 1.8rem;
 
@@ -165,6 +174,7 @@ nav .button {
     background-color: #209a7d;
     transition: .3s ease-in-out;
 }
+
 .login:hover,
 .login:focus-visible {
     background-color: #11253e;
@@ -178,6 +188,7 @@ main .search {
     align-items: center;
     position: relative;
 }
+
 .search h1 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
@@ -188,9 +199,9 @@ main .search {
 .search input {
     position: absolute;
     font-size: 1rem;
-    left:50%;
-    transform:translateX(-50%);
-    padding:.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .5rem;
     color: inherit;
     width: 40%;
     text-decoration: none;
@@ -198,9 +209,11 @@ main .search {
     border-radius: .5rem;
     border: .3rem solid #152f4f;
 }
+
 /* Game trailers */
 
-.trailers, .games {
+.trailers,
+.games {
     margin: 0;
     padding: 0;
     display: flex;
@@ -221,11 +234,11 @@ main .search {
 .slides {
     width: 400%;
     height: 25rem;
-    display:flex;
+    display: flex;
 }
 
-.slides input{
-    display:none;
+.slides input {
+    display: none;
 }
 
 .slide {
@@ -233,7 +246,9 @@ main .search {
 
     transition: 2s;
 }
-.trailer, .game {
+
+.trailer,
+.game {
     display: flex;
     flex-direction: row-reverse;
     background-color: #dbdbdb;
@@ -269,20 +284,23 @@ main .search {
     background-color: #fff;
 }
 
-#radio1:checked ~ .first, 
-#game-radio1:checked ~ .first {
+#radio1:checked~.first,
+#game-radio1:checked~.first {
     margin-left: 0;
 }
-#radio2:checked ~ .first, 
-#game-radio2:checked ~ .first {
+
+#radio2:checked~.first,
+#game-radio2:checked~.first {
     margin-left: -25%;
 }
-#radio3:checked ~ .first, 
-#game-radio3:checked ~ .first{
+
+#radio3:checked~.first,
+#game-radio3:checked~.first {
     margin-left: -50%;
 }
-#radio4:checked ~ .first, 
-#game-radio4:checked ~ .first{
+
+#radio4:checked~.first,
+#game-radio4:checked~.first {
     margin-left: -75%;
 }
 
@@ -294,7 +312,7 @@ main .search {
     justify-content: center;
 }
 
-.navigation-auto div  {
+.navigation-auto div {
     border: 2px solid #ffffff;
     padding: .5rem;
     border-radius: 1rem;
@@ -305,29 +323,30 @@ main .search {
     margin-right: 4rem;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1,
-#game-radio1:checked ~ .navigation-auto .game-auto-btn1  {
+#radio1:checked~.navigation-auto .auto-btn1,
+#game-radio1:checked~.navigation-auto .game-auto-btn1 {
     background-color: #fff;
 }
 
-#radio2:checked ~.navigation-auto .auto-btn2,
-#game-radio2:checked ~.navigation-auto .game-auto-btn2 {
+#radio2:checked~.navigation-auto .auto-btn2,
+#game-radio2:checked~.navigation-auto .game-auto-btn2 {
     background-color: #fff;
 }
 
-#radio3:checked ~.navigation-auto .auto-btn3,
-#game-radio3:checked ~.navigation-auto .game-auto-btn3 {
+#radio3:checked~.navigation-auto .auto-btn3,
+#game-radio3:checked~.navigation-auto .game-auto-btn3 {
     background-color: #fff;
 }
 
-#radio4:checked ~.navigation-auto .auto-btn4,
-#game-radio4:checked ~.navigation-auto .game-auto-btn4 {
+#radio4:checked~.navigation-auto .auto-btn4,
+#game-radio4:checked~.navigation-auto .game-auto-btn4 {
     background-color: #fff;
 }
 
 .text {
     width: 50%;
 }
+
 .trailer iframe {
     border-radius: 1rem;
 }
@@ -335,7 +354,24 @@ main .search {
 .our-team img {
     height: 10rem;
     width: 10rem;
-    object-fit: cover ;
+    object-fit: cover;
+}
+
+.thanks h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.thanks p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    line-height: 1.5em;
 }
 
 /* footer styling */
