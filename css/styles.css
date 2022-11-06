@@ -359,6 +359,7 @@ main .search {
 
 
 .thanks {
+    margin: 0 auto;
     font-weight: bold;
     font-size: 1.4rem;
     padding: 2rem;
