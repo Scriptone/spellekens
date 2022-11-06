@@ -121,13 +121,13 @@ if (isset($_POST['btnSubmit'])) {
             <ul class="nav">
                 <li><a href="../"><i class="fa fa-home"></i>Home</a></li>
                 <li><a href="./" class="active"><i class="fa fa-user"></i>About us</a></li>
-                <li><a href="../spellen"><i class="fa fa-folder"></i>Games</a></li>
+                <li><a href="../games"><i class="fa fa-folder"></i>Games</a></li>
                 <li><a href="../chatbot"><i class="fa fa-question-circle"></i>Help desk</a></li>
             </ul>
             <div class="nav-line"></div>
             <ul class="help">
                 <li>
-                    <a href="../about#contactform" class="button">Contact</a>
+                    <a href="#contactform" class="button">Contact</a>
                 </li>
                 <li>
                     <a href="../login/index.php" class="button login"><i class="fa fa-user"></i>Login</a>

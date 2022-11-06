@@ -1,99 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name = "viewport"
-          content ="width = device-width">
+    <meta name="viewport" content="width = device-width">
     <link rel="icon" type="image/x-icon" href="../images/logo.png">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/tic-tac-toe.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/tic-tac-toe.css">
 
     <title>Bart kaas en eieren</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body onload="navline();">
+
+<body>
     <header>
-        <a href="../" class="logo">
-            <h1><img src="../images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
+        <a href="../../" class="logo">
+            <h1><img src="../../images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
         </a>
         <nav>
             <ul class="nav">
-                <li><a href="../" ><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="../about"><i class="fa fa-user"></i>About us</a></li>
-                <li><a href="../spellen" class="active"><i class="fa fa-folder"></i>Games</a></li>
+                <li><a href="../../"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="../../about/"><i class="fa fa-user"></i>About us</a></li>
+                <li><a href="../" class="active"><i class="fa fa-folder"></i>Games</a></li>
                 <li><a href="../chatbot"><i class="fa fa-question-circle"></i>Help desk</a></li>
-            </ul>                                                                                                                                                       
+            </ul>
             <div class="nav-line"></div>
             <ul class="help">
                 <li>
-                    <a href="../contact" class="button">Contact</a>
+                    <a href="../../about#contactform" class="button">Contact</a>
                 </li>
                 <li>
-                    <a href="../login/index.php" class="button login"><i class="fa fa-user"></i>Login</a>
+                    <a href="../../login/index.php" class="button login"><i class="fa fa-user"></i>Login</a>
                 </li>
             </ul>
 
         </nav>
+        <script src="../../JS_Bestanden/navline.js"></script>
     </header>
-<main>
-    <div class="start-game">
-        <h1 class="text-light">Select Character</h1>
-        <div class="profile">
-            <div class="img">
-                <img src="../images/tic-tac-toe/bart.png" class="id" data-id="x" alt="">
-                <img src="../images/tic-tac-toe/davy.png" class="id" data-id="y" alt="">
+    <main>
+        <div class="start-game">
+            <h1 class="text-light">Select Character</h1>
+            <div class="profile">
+                <div class="img">
+                    <img src="../../images/tic-tac-toe/bart.png" class="id" data-id="x" alt="">
+                    <img src="../../images/tic-tac-toe/davy.png" class="id" data-id="y" alt="">
+                </div>
+                <div class="img">
+                    <img src="../../images/tic-tac-toe/peter.png" class="id" data-id="x2" alt="">
+                    <img src="../../images/tic-tac-toe/peter2.png" class="id" data-id="y2" alt="">
+                </div>
             </div>
-            <div class="img">
-                <img src="../images/tic-tac-toe/peter.png" class="id" data-id="x2" alt="">
-                <img src="../images/tic-tac-toe/peter2.png" class="id" data-id="y2" alt="">
+
+            <button class="primary-btn" id="startBtn">Start Game</button>
+        </div>
+
+        <!-- game board -->
+        <div class="container">
+            <div class="board" id="board">
+                <div class="block" data-cell></div>
+                <div class="block" data-cell></div>
+                <div class="block" data-cell></div>
+                <div class="block" data-cell></div>
+                <div class="block" data-cell></div>
+                <div class="block" data-cell></div>
+                <div class="block" data-cell></div>
+                <div class="block" data-cell></div>
+                <div class="block" data-cell></div>
             </div>
         </div>
 
-        <button class="primary-btn" id="startBtn">Start Game</button>
-    </div>
-
-    <!-- game board -->
-    <div class="container">
-        <div class="board" id="board">
-            <div class="block" data-cell></div>
-            <div class="block" data-cell></div>
-            <div class="block" data-cell></div>
-            <div class="block" data-cell></div>
-            <div class="block" data-cell></div>
-            <div class="block" data-cell></div>
-            <div class="block" data-cell></div>
-            <div class="block" data-cell></div>
-            <div class="block" data-cell></div>
+        <!-- Draw Window -->
+        <div class="draw-msg">
+            <div class="draw">
+                <h1 class="text-center text-yellow">Draw</h1>
+            </div>
+            <button id="drawBtn" class="primary-btn">Play Again</button>
         </div>
-    </div>
 
-    <!-- Draw Window -->
-    <div class="draw-msg">
-        <div class="draw">
-            <h1 class="text-center text-yellow">Draw</h1>
+        <!-- winner Window -->
+        <div class="winner-msg">
+            <h1 class="text-center text-yellow">Winner</h1>
+            <div class="winner"></div>
+            <button id="restartBtn" class="primary-btn">Restart</button>
         </div>
-        <button id="drawBtn" class="primary-btn">Play Again</button>
-    </div>
 
-    <!-- winner Window -->
-    <div class="winner-msg">
-        <h1 class="text-center text-yellow">Winner</h1>
-        <div class="winner"></div>
-        <button id="restartBtn" class="primary-btn">Restart</button>
-    </div>
-
-    <script type="module" src="../JS_bestanden/tic-tac-toe/index.js"></script>
-</main>
-<footer>
-    <h1>Copyright &copy; 2022 Spellekens | Designed by team Spellekens | </h1>
-    <section class="social-icons">
-        <a href="https://www.facebook.com/" title="facebook link" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.instagram.com/" title="instagram link" target="_blank"><i
-                class="fa fa-instagram"></i></a>
-        <a href="https://www.twitter.com/" title="twitter link" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/" title="linkedin link" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.twitch.tv/" title="twitch link" target="_blank"><i class="fa fa-twitch"></i></a>
-    </section>
-</footer>
+        <script type="module" src="../../JS_bestanden/tic-tac-toe/index.js"></script>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2022 Spellekens | Designed by team Spellekens | </p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" title="facebook link" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" title="instagram link" target="_blank"><i
+                    class="fa fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" title="twitter link" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" title="linkedin link" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.twitch.tv/" title="twitch link" target="_blank"><i class="fa fa-twitch"></i></a>
+        </div>
+    </footer>
 </body>
+
 </html>
