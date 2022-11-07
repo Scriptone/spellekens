@@ -454,8 +454,12 @@ footer h1 {
     color: rgb(23, 23, 23)
 }
 
-.certificate img {
-    width: 50rem;
+.certificate {
     display: flex;
     justify-content: center;
 }
+
+.certificate img {
+    width: 50rem;
+}
+
