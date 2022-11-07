@@ -1,11 +1,11 @@
 <?php
 
 // Constanten (connectie-instellingen databank)
+// Constanten (connectie-instellingen databank)
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'contact2');
-
+define('DB_USER', 'coworking');
+define('DB_PASS', 'Ii3m8j08^');
+define('DB_NAME', 'coworking-about');
 
 date_default_timezone_set('Europe/Brussels');
 
