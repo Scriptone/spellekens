@@ -463,3 +463,30 @@ footer h1 {
     width: 50rem;
 }
 
+.selectie {
+    text-align: center;
+}
+.selectie ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.selectie ul li {
+    border: solid 2px #11253e;
+    background-color: #146edd;
+    margin: 1rem;
+    list-style: none;
+    width: 5rem;
+    height: 5rem;
+    font-size: 150%;
+    border-radius: 10px;
+    padding-top: 1.2rem;
+}
+
+.selectie ul li a {
+    text-decoration: none;
+    color: #11253e;
+    font-size: 120%;
+    text-align: center;
+}
