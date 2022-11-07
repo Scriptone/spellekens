@@ -1,9 +1,9 @@
 <?php 
 
 $server = "localhost";
-$user = "root";
-$pass = "";
-$database = "spellekens";
+$user = "coworking-login";
+$pass = "7u%3hy7K7";
+$database = "coworking-login";
 
 $conn = mysqli_connect($server, $user, $pass, $database);
 
