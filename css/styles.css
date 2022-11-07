@@ -258,8 +258,14 @@ main .search {
     margin: 1rem auto;
     width: 50rem;
     gap: 2rem;
+    height: 22rem;
 }
 
+.game img {
+    width: 50%;
+    max-height: 18rem;
+    object-fit: cover;
+}
 .navigation-manual {
     position: absolute;
     width: 100%;
