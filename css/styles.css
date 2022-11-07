@@ -453,3 +453,7 @@ footer h1 {
     font-size: large;
     color: rgb(23, 23, 23)
 }
+
+.certificate {
+    width: 50%;
+}
