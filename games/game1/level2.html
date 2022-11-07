@@ -2,7 +2,12 @@
 <html lang="en">
   <head><title>Odisee Invaders</title></head>
   <body>
-    <h1>Level 1</h1>    
+    <h1>Level 2</h1>
+    <style>
+        h1 {
+            color: #000000;
+        }
+    </style>    
     <!-- Game canvas -->
     <canvas id="canvas" width="800" height="600"></canvas>    
     <!-- Javascript game logic -->
@@ -184,8 +189,8 @@
       game.asteroidsSpace = 150;
 
       // Setup enemies
-      game.enemiesEachLine = 10;
-      game.enemyLines = 7;
+      game.enemiesEachLine = 20;
+      game.enemyLines = 8;
       game.enemySpace = 30;
       game.enemyFireRate = 1000;
       game.enemyFireTimer = 0;
@@ -214,8 +219,8 @@
 
         // Check if the player has destroyed all enemies
         if (game.enemies.length == 0) {
-          // Move to level 2
-          location.href = 'level2.html';
+          // Move to level 3
+          location.href = 'level3.html';
         }
 
         // Check if the enemies are out of bounds.
@@ -392,8 +397,7 @@
 
       // Defines a function to restart the game
       game.restart = function() {
-        game.stop();
-        game.init();
+        location.href = 'index.html';
       }
 
       // Start the game on window load
