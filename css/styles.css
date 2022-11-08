@@ -16,6 +16,7 @@ body {
     color: #152f4f;
     max-width: 1280px;
     background-color: #fefefe;
+    min-height: 100vh;
 }
 
 main {
