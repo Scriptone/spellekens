@@ -22,7 +22,7 @@ if (!isset($_SESSION['username'])) {
       <div id="home">
         <div class="all">
           <nav>
-            <img src="#" class="logo">
+            <img src="../images/logo.png" class="logo">
             <ul id="navbar">
               <li class="welcome" ><a href="#">You're in
               <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
