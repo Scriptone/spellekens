@@ -535,10 +535,14 @@ footer p {
     text-align: center;
 }
 
-.random {
+.vliegveld div {
     width: 50%;
     height: 50%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
+}
+
+.vliegveld {
+    text-align: center;
 }
