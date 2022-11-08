@@ -504,7 +504,7 @@ footer p {
 
 .selectie {
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 .selectie ul {
     display: flex;
@@ -545,4 +545,43 @@ footer p {
 
 .vliegveld {
     text-align: center;
+}
+.wd1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.wd2{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    top: 22rem;
+    border-radius: 30%;
+
+}
+
+@keyframes example {
+    0%   { left: 0; top:22rem;}
+    5%   { left: 2.5rem; top:23rem;}
+    10%  { left: 5rem; top:24rem;}
+    15%  { left: 7.5rem; top:21rem;}
+    20%  { left: 10rem; top: 22rem;;}
+    25%  { left: 12.5rem; top:23rem;}
+    30%  { left: 15rem; top:20rem;}
+    35%  { left: 17.5rem; top: 17rem;}
+    40%  { left: 20rem; top: 14rem;}
+    45%  { left: 22.5rem; top:15rem;}
+    50%  { left: 25rem; top:16rem;}
+    55%  { left: 27.5rem; top:17rem;}
+    60%  { left: 30rem; top:18rem;}
+    65%  { left: 32.5rem; top:19rem;}
+    70%  { left: 35rem; top:20rem;}
+    75%  { left: 37.5rem; top:21rem;}
+    80%  { left: 40rem; top:22rem;}
+    85%  { left: 42.5rem; top:23rem;}
+    90%  { left: 45rem; top:24rem;}
+    95%  { left: 47.5rem; top:25rem;}
+    100%  { left: 51rem; top:26rem;}
 }
