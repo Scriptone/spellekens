@@ -504,6 +504,7 @@ footer p {
 
 .selectie {
     text-align: center;
+    margin-bottom: 10rem;
 }
 .selectie ul {
     display: flex;
@@ -523,9 +524,21 @@ footer p {
     padding-top: 1.2rem;
 }
 
+.selectie ul li:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .selectie ul li a {
     text-decoration: none;
     color: #11253e;
     font-size: 120%;
     text-align: center;
+}
+
+.random {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
