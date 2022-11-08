@@ -536,8 +536,8 @@ footer p {
 }
 
 .random {
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
