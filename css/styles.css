@@ -53,6 +53,15 @@ header {
     display: none;
 }
 
+.canvas0 {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
 header a {
 
     font-weight: bold;
