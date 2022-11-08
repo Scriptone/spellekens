@@ -14,12 +14,14 @@ body {
     /* default browserstyles geven een marge aan je body --> override, op 0 plaatsen */
     margin: 0 auto;
     color: #152f4f;
-    max-width: 1280px;
+    max-width: 80rem;
     background-color: #fefefe;
+    min-height: 100vh;
+    position: relative;
 }
 
 main {
-    max-width: 1280px;
+    max-width: 80rem;
     margin: 0 2rem;
 }
 
@@ -33,13 +35,13 @@ header {
     padding: 0 2rem;
     margin: 1rem;
     height: 5rem;
-    border-radius: 0px 0px 1.5rem 1.5rem;
+    border-radius: 0 0 1.5rem 1.5rem;
 
 }
 
 #map {
-    height: 500px;
-    width: 500px;
+    height: 30rem;
+    width: 30rem;
 }
 
 #canvas {
@@ -76,7 +78,7 @@ img {
 header h1 {
     display: flex;
     font-size: 1.5rem;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     cursor: pointer;
     align-items: center;
 
@@ -113,7 +115,7 @@ nav {
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     padding: .8rem .5rem;
     margin: 0 0;
 
@@ -147,7 +149,7 @@ nav ul a:focus-visible {
     background-color: #21a687;
     color: #FFF;
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     border: .2rem solid transparent;
     font-weight: bold;
     padding: .4rem 1rem;
@@ -294,7 +296,7 @@ main .search {
 }
 
 .manual-btn {
-    border: 2px solid #ffffff;
+    border: .2rem solid #ffffff;
     padding: .5rem;
     border-radius: 1rem;
     cursor: pointer;
@@ -348,7 +350,7 @@ main .search {
 }
 
 .navigation-auto div {
-    border: 2px solid #ffffff;
+    border: .2rem solid #ffffff;
     padding: .5rem;
     border-radius: 1rem;
     transition: 1s;
@@ -468,24 +470,26 @@ main .search {
 
 .fa {
     color: rgb(23, 23, 23);
-    width: 35px;
-    height: 35px;
-    padding: 7px 7px;
-
-    left: 0px;
-    top: 0px;
+    width: 2rem;
+    height: 2rem;
+    padding: .5rem;
+    left: 0;
+    top: 0;
 }
 
 footer {
     display: flex;
-    padding: 1rem 1rem;
+    padding: 1rem;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: -7rem;
 }
 
 footer section {
-    padding: 0px 0px;
+    padding: 0 0;
 }
 
 footer p {
@@ -504,7 +508,7 @@ footer p {
 
 .selectie {
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 .selectie ul {
     display: flex;
@@ -513,19 +517,19 @@ footer p {
 }
 
 .selectie ul li {
-    border: solid 2px #11253e;
+    border: solid .2rem #11253e;
     background-color: #146edd;
     margin: 1rem;
     list-style: none;
     width: 5rem;
     height: 5rem;
     font-size: 150%;
-    border-radius: 10px;
+    border-radius: 1rem;
     padding-top: 1.2rem;
 }
 
 .selectie ul li:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 1.2rem 1rem 0 #000A, 0 1.1rem 3.5rem 0 #0009;
 }
 
 .selectie ul li a {
@@ -545,4 +549,43 @@ footer p {
 
 .vliegveld {
     text-align: center;
+}
+.wd1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.wd2{
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    top: 22rem;
+    border-radius: 30%;
+
+}
+
+@keyframes example {
+    0%   { left: 0; top:22rem;}
+    5%   { left: 2.5rem; top:23rem;}
+    10%  { left: 5rem; top:24rem;}
+    15%  { left: 7.5rem; top:21rem;}
+    20%  { left: 10rem; top: 22rem;;}
+    25%  { left: 12.5rem; top:23rem;}
+    30%  { left: 15rem; top:20rem;}
+    35%  { left: 17.5rem; top: 17rem;}
+    40%  { left: 20rem; top: 14rem;}
+    45%  { left: 22.5rem; top:15rem;}
+    50%  { left: 25rem; top:16rem;}
+    55%  { left: 27.5rem; top:17rem;}
+    60%  { left: 30rem; top:18rem;}
+    65%  { left: 32.5rem; top:19rem;}
+    70%  { left: 35rem; top:20rem;}
+    75%  { left: 37.5rem; top:21rem;}
+    80%  { left: 40rem; top:22rem;}
+    85%  { left: 42.5rem; top:23rem;}
+    90%  { left: 45rem; top:24rem;}
+    95%  { left: 47.5rem; top:25rem;}
+    100%  { left: 51rem; top:26rem;}
 }
