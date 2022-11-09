@@ -2,7 +2,7 @@
     font-size: 3rem;
     color: #152f4f;
     -webkit-text-stroke: 1px #152f4f;
-    background: url(./image/back.png);
+    background: url(../image/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 15s linear infinite;
