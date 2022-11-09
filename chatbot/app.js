@@ -57,7 +57,10 @@ const answers = [
     "Better not tell you now",
     "Cannot predict now",
     "Concentrate and ask again",
-    "Yes daddy"
+    "Yes daddy",
+    "You're not old enough to learn that information",
+    "Might be the case",
+    "Might now be the case"
 ];
 const getChatbotResponse = (userInput) => {
     return responseObj[userInput.toLowerCase()] == undefined
@@ -75,6 +78,7 @@ const setScrollPosition = () => {
 const responseObj = {
     hello: "Hey ! How are you doing ?",
     hey: "Hey! What's Up",
+    alone: "Gimme 10 minutes to get there",
     today: new Date().toDateString(),
     time: new Date().toLocaleTimeString(),
 };
