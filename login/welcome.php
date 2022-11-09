@@ -63,7 +63,7 @@ if (!isset($_SESSION['username'])) {
                     <a href="../index.html" class="button">Contact</a>
                 </li>
                 <li>
-                    <a href="../logout.php" class="button login"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+                    <a href="logout.php" class="button login"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
                 </li>
             </ul>
         </nav>
