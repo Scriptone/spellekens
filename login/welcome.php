@@ -22,8 +22,36 @@ if (!isset($_SESSION['username'])) {
     <title>Spellekens</title>
   </head>
   <body>
+	  <header>
+		<a href="../../" class="logo">
+			<h1><img src="../../images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
+		</a>
+		<button class="hamburger-menu" title="Toggle" onclick="menuToggle()">
+            <i class="fa fa-bars"></i>
+        </button>
+		<nav>
+			<ul class="nav">
+				<li><a href="../../"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="../../about/"><i class="fa fa-user"></i>About us</a></li>
+				<li><a href="../" class="active"><i class="fa fa-folder"></i>Games</a></li>
+				<li><a href="../../chatbot"><i class="fa fa-question-circle"></i>Help desk</a></li>
+			</ul>
+			<div class="nav-line"></div>
+			<ul class="help">
+				<li>
+					<a href="../../about#contactform" class="button">Contact</a>
+				</li>
+				<li>
+					<a href="../../login/index.php" class="button login"><i class="fa fa-user"></i>Login</a>
+				</li>
+			</ul>
+
+		</nav>
+		<script src="../../JS_Bestanden/navline.js"></script>
+	</header>
+
         <!-- Page 1 Home-->
-      <div id="home">
+      <!--div id="home">
         <div class="all">
           <nav>
             <img src="../images/logo.png" class="logo">
@@ -47,6 +75,6 @@ if (!isset($_SESSION['username'])) {
           <h1>Welcome to our website <br><?php echo $_SESSION['username']; ?></br></h1></h1>
 
       </div>
-    </div>
+    </div-->
   </body>
 </html>
