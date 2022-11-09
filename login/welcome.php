@@ -18,9 +18,11 @@ if (!isset($_SESSION['username'])) {
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans">
     <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!-- Universal css -->
     <link href="../css/styles.css" rel="stylesheet">
-
+    
+    <!-- Welcome css -->
+    <link href="style.css" rel="stylesheet">
 
     <script src="../JS_Bestanden/slider.js"></script>
 
