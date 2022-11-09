@@ -34,7 +34,6 @@ header {
     align-items: center;
     padding: 0 2rem;
     margin: 1rem;
-    height: 5rem;
     border-radius: 0 0 1.5rem 1.5rem;
 
 }
@@ -141,6 +140,31 @@ nav {
 nav ul a:hover,
 nav ul a:focus-visible {
     color: #146edd;
+}
+
+header .hamburger-menu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1.5rem;
+    aspect-ratio: 1 / 1;
+    height: 3.5rem;
+    right: 2rem;
+    cursor: pointer;
+
+    border: .2rem solid #fff;
+    border-radius: 1rem;
+    background-color: transparent;
+    color: #fff;
+    z-index: 2;
+}
+
+.hamburger-menu .fa-bars {
+    width: fit-content;
+    margin-bottom: .1rem;
+    height: fit-content;
+    font-size: 1.5rem;
 }
 
 .button {
@@ -287,6 +311,7 @@ main .search {
     border: .2rem solid #000A;
     object-fit: cover;
 }
+
 .navigation-manual {
     position: absolute;
     width: 100%;
@@ -330,6 +355,7 @@ main .search {
 #game-radio4:checked~.first {
     margin-left: -50%;
 }
+
 #radio5:checked~.first,
 #game-radio5:checked~.first {
     margin-left: -66.66%;
@@ -418,6 +444,7 @@ main .search {
     width: 100%;
     height: 15rem;
 }
+
 .our-team img {
     height: 10rem;
     width: 10rem;
@@ -435,17 +462,18 @@ main .search {
     text-transform: uppercase;
     letter-spacing: .1rem;
     box-shadow: 0 0 1rem #000A;
-    width:fit-content;
+    width: fit-content;
 }
+
 .thanks h2 {
     margin-bottom: .5em;
-    width:fit-content;
+    width: fit-content;
 }
 
 .thanks p {
     margin-bottom: 1em;
     line-height: 1.5em;
-    width:fit-content;
+    width: fit-content;
 }
 
 /* footer styling */
@@ -510,6 +538,7 @@ footer p {
     text-align: center;
     margin-bottom: 5rem;
 }
+
 .selectie ul {
     display: flex;
     justify-content: center;
@@ -550,12 +579,14 @@ footer p {
 .vliegveld {
     text-align: center;
 }
-.wd1{
+
+.wd1 {
     width: 100%;
     height: 100%;
     display: flex;
 }
-.wd2{
+
+.wd2 {
     width: 6rem;
     height: 6rem;
     position: relative;
@@ -567,25 +598,151 @@ footer p {
 }
 
 @keyframes example {
-    0%   { left: 0; top:22rem;}
-    5%   { left: 2.5rem; top:23rem;}
-    10%  { left: 5rem; top:24rem;}
-    15%  { left: 7.5rem; top:21rem;}
-    20%  { left: 10rem; top: 22rem;;}
-    25%  { left: 12.5rem; top:23rem;}
-    30%  { left: 15rem; top:20rem;}
-    35%  { left: 17.5rem; top: 17rem;}
-    40%  { left: 20rem; top: 14rem;}
-    45%  { left: 22.5rem; top:15rem;}
-    50%  { left: 25rem; top:16rem;}
-    55%  { left: 27.5rem; top:17rem;}
-    60%  { left: 30rem; top:18rem;}
-    65%  { left: 32.5rem; top:19rem;}
-    70%  { left: 35rem; top:20rem;}
-    75%  { left: 37.5rem; top:21rem;}
-    80%  { left: 40rem; top:22rem;}
-    85%  { left: 42.5rem; top:23rem;}
-    90%  { left: 45rem; top:24rem;}
-    95%  { left: 47.5rem; top:25rem;}
-    100%  { left: 51rem; top:26rem;}
+    0% {
+        left: 0;
+        top: 22rem;
+    }
+
+    5% {
+        left: 2.5rem;
+        top: 23rem;
+    }
+
+    10% {
+        left: 5rem;
+        top: 24rem;
+    }
+
+    15% {
+        left: 7.5rem;
+        top: 21rem;
+    }
+
+    20% {
+        left: 10rem;
+        top: 22rem;
+        ;
+    }
+
+    25% {
+        left: 12.5rem;
+        top: 23rem;
+    }
+
+    30% {
+        left: 15rem;
+        top: 20rem;
+    }
+
+    35% {
+        left: 17.5rem;
+        top: 17rem;
+    }
+
+    40% {
+        left: 20rem;
+        top: 14rem;
+    }
+
+    45% {
+        left: 22.5rem;
+        top: 15rem;
+    }
+
+    50% {
+        left: 25rem;
+        top: 16rem;
+    }
+
+    55% {
+        left: 27.5rem;
+        top: 17rem;
+    }
+
+    60% {
+        left: 30rem;
+        top: 18rem;
+    }
+
+    65% {
+        left: 32.5rem;
+        top: 19rem;
+    }
+
+    70% {
+        left: 35rem;
+        top: 20rem;
+    }
+
+    75% {
+        left: 37.5rem;
+        top: 21rem;
+    }
+
+    80% {
+        left: 40rem;
+        top: 22rem;
+    }
+
+    85% {
+        left: 42.5rem;
+        top: 23rem;
+    }
+
+    90% {
+        left: 45rem;
+        top: 24rem;
+    }
+
+    95% {
+        left: 47.5rem;
+        top: 25rem;
+    }
+
+    100% {
+        left: 51rem;
+        top: 26rem;
+    }
+}
+
+@media (max-width: 90rem) {
+    header {
+
+        flex-direction: column;
+    }
+
+    header>a {
+        align-self: flex-start;
+    }
+
+    nav ul {
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    nav .button {
+        margin-left: 0;
+    }
+
+    .nav-line {
+        display: none;
+    }
+
+    .nav-active {
+        display: flex;
+        overflow: hidden;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    header .hamburger-menu {
+        display: flex;
+    }
+
 }

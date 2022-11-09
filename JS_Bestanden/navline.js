@@ -1,3 +1,9 @@
+function menuToggle () {
+    var nav = document.querySelector("nav");
+    nav.classList.toggle("nav-active");
+    console.log(nav.classList.contains("nav-active"));
+}
+
 function navline() {
     console.log("Navline init");
     var navElements = document.querySelectorAll("nav ul li");
