@@ -146,9 +146,10 @@ if (isset($_POST['btnSubmit'])) {
             <div class="container py-5">
                 <div class="row align-items-center mb-5">
                     <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
-                        <h2 class="font-weight-light">Wie zijn wij </h2>
-                        <p class="font-italic text-muted mb-4">Wij zijn team Spellekens ook wel bekend als team 11. Samen 
-                            hebben wij onze jeugd herleeft aan de hand van een zelfgemaakte website gevult met parodies van games uit ons verleden . 
+                        <h2 class="font-weight-light">Who are we</h2>
+                        <p class="font-italic text-muted mb-4">We are team Spellekens also known as team eleven. 
+                            Together we relived our past by creating our own website filled with remixed versions of 
+                            games we played as children    
                         </p><a href="#"
                             class="btn btn-light px-5 rounded-pill shadow-sm">Learn More</a>
                     </div>
@@ -161,9 +162,11 @@ if (isset($_POST['btnSubmit'])) {
                             src="https://bootstrapious.com/i/snippets/sn-about/img-2.jpg" alt=""
                             class="img-fluid mb-4 mb-lg-0"></div>
                     <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
-                        <h2 class="font-weight-light">Lorem ipsum dolor sit amet</h2>
-                        <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a href="#"
+                        <h2 class="font-weight-light">Why this website</h2>
+                        <p class="font-italic text-muted mb-4">This concept was chosen because we all felt that this was the
+                            best way to work together. Everyone got to remix their own game and put their soul into it , the 
+                            full website quickly followed.
+                        </p><a href="#"
                             class="btn btn-light px-5 rounded-pill shadow-sm">Learn More</a>
                     </div>
                 </div>
