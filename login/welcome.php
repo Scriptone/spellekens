@@ -41,7 +41,7 @@ if (!isset($_SESSION['username'])) {
     </script>
     <header>
         <a href="./" class="logo">
-            <h1><img src="./images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
+            <h1><img src="../images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
         </a>
         <button class="hamburger-menu" title="Toggle" onclick="menuToggle()">
             <i class="fa fa-bars"></i>
@@ -56,10 +56,10 @@ if (!isset($_SESSION['username'])) {
             <div class="nav-line"></div>
             <ul class="help">
                 <li>
-                    <a href="./about#contactform" class="button">Contact</a>
+                    <a href="../index.html" class="button">Contact</a>
                 </li>
                 <li>
-                    <a href="./login/index.php" class="button login"><i class="fa fa-user"></i>Login</a>
+                    <a href="../index.php" class="button login"><i class="fa fa-user"></i>Logout</a>
                 </li>
             </ul>
         </nav>
