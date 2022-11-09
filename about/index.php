@@ -218,7 +218,7 @@ if (isset($_POST['btnSubmit'])) {
                     <div class="col-xl-3 col-sm-6 mb-5">
                         <div class="bg-white rounded shadow-sm py-5 px-4">
                             <img
-                                src="../images/Phoenix.jpg" alt="" 
+                                src="../images/Phoenix.png" alt="" 
                                 class="img-fluid rounded-pill mb-3 img-thumbnail shadow-sm">
                             <h5 class="mb-0">Phoenix</h5><span class="small text-uppercase text-muted">CEO -
                                 Founder</span>
