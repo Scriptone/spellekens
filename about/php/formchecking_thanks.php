@@ -3,10 +3,20 @@
 $name = isset($_GET["name"]) ? $_GET["name"] : false;
 
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EF4ZEFP8NR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EF4ZEFP8NR');
+    </script>
     <meta name="viewport" content="width = device-width">
     <link rel="icon" type="image/x-icon" href="../../logo.png">
 
@@ -21,11 +31,15 @@ $name = isset($_GET["name"]) ? $_GET["name"] : false;
         integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
     <title>Contact form</title>
 </head>
+
 <body>
     <header>
         <a href="../../" class="logo">
             <h1><img src="../../images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
         </a>
+        <button class="hamburger-menu" title="Toggle" onclick="menuToggle()">
+            <i class="fa fa-bars"></i>
+        </button>
         <nav>
             <ul class="nav">
                 <li><a href="../../"><i class="fa fa-home"></i>Home</a></li>
@@ -50,22 +64,22 @@ $name = isset($_GET["name"]) ? $_GET["name"] : false;
         <section class="thanks">
             <h2>Result</h2>
 
-			<?php
+            <?php
 
-				// Name sent in
-				if ($name) {
-					echo '<h2>Thank you ' . htmlentities($name). '</h2>';
-				}
+            // Name sent in
+            if ($name) {
+                echo '<h2>Thank you ' . htmlentities($name) . '</h2>';
+            }
 
-				// Nothing sent in
-				else {
-					echo '<h2>Thank you, stranger</h2>';
-				}
-				
-			?>
-			<p>Your form was successfully sent!</p>
-			<a href="../" class="button">Go back</a>
-		</section>
+            // Nothing sent in
+            else {
+                echo '<h2>Thank you, stranger</h2>';
+            }
+
+            ?>
+            <p>Your form was successfully sent!</p>
+            <a href="../" class="button">Go back</a>
+        </section>
     </main>
     <footer>
         <p>Copyright &copy; 2022 Spellekens | Designed by team Spellekens | </p>
@@ -80,4 +94,5 @@ $name = isset($_GET["name"]) ? $_GET["name"] : false;
     </footer>
 
 </body>
+
 </html>

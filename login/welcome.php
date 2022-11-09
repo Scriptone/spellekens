@@ -12,6 +12,14 @@ if (!isset($_SESSION['username'])) {
 <html lang="en">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EF4ZEFP8NR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EF4ZEFP8NR');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="../images/logo.png">
@@ -20,7 +28,7 @@ if (!isset($_SESSION['username'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Universal css -->
     <link href="../css/styles.css" rel="stylesheet">
-    
+
     <!-- Welcome css -->
     <link href="./css/opmaak.css" rel="stylesheet">
 
@@ -28,23 +36,15 @@ if (!isset($_SESSION['username'])) {
 
     <!-- Cookies css -->
     <link href="../cookies/style.css" rel="stylesheet">
-    
-        <!--Link-Font-Awesome(icon)-->
-    <script src="https://kit.fontawesome.com/e3ad0412a5.js" crossorigin="anonymous"></script></head>
 
-    <title>Spellekens</title>
+    <!--Link-Font-Awesome(icon)-->
+    <script src="https://kit.fontawesome.com/e3ad0412a5.js" crossorigin="anonymous"></script>
+</head>
+
+<title>Spellekens</title>
 </head>
 
 <body>
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PFK425');
-    </script>
     <header>
         <a href="../" class="logo">
             <h1><img src="../images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
@@ -78,7 +78,9 @@ if (!isset($_SESSION['username'])) {
             <input type="text" class="search-input" placeholder="Search for game">
         </section>
         <section class="trailer-container">
-            <h1 class="animation">Hi <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>, Welcome to our site.</h1>
+            <h1 class="animation">Hi <b>
+                    <?php echo htmlspecialchars($_SESSION["username"]); ?>
+                </b>, Welcome to our site.</h1>
             <h2>Game trailers</h2>
             <section class="trailers">
 
@@ -110,7 +112,8 @@ if (!isset($_SESSION['username'])) {
                                 <section class="text">
                                     <h3>Bartje De Vlieger</h3>
                                     <p>
-                                        A sneak peak of the thrilling face through pipe gameplay of the hit game Bartje de vlieger.
+                                        A sneak peak of the thrilling face through pipe gameplay of the hit game Bartje
+                                        de vlieger.
                                     </p>
                                 </section>
                                 <iframe width="700" height="315" src="https://www.youtube.com/embed/m81YRB7HOUQ"
@@ -125,7 +128,8 @@ if (!isset($_SESSION['username'])) {
                                 <section class="text">
                                     <h3>Bart-Kaas-En-Eieren</h3>
                                     <p>
-                                        The official trailer for Bart Kaas en Eieren revealing the long awaited gameplay.
+                                        The official trailer for Bart Kaas en Eieren revealing the long awaited
+                                        gameplay.
                                     </p>
                                 </section>
                                 <iframe width="700" height="315" src="https://www.youtube.com/embed/NApmzPEzeeo"
@@ -231,9 +235,9 @@ if (!isset($_SESSION['username'])) {
                                 <section class="text">
                                     <h3>Odisee Invaders</h3>
                                     <p>
-                                        Pilot your spaceship through waves of enemies and rows of meteors. Avoid enemy 
+                                        Pilot your spaceship through waves of enemies and rows of meteors. Avoid enemy
                                         fire and eliminate them all before they reach your location.
-                                        
+
                                         Blast your way past five exciting levels rising in dificulty and eventually try
                                         your best in a 1v1 faceoff with the dangerous minigun.
                                     </p>
@@ -249,7 +253,7 @@ if (!isset($_SESSION['username'])) {
                                     <p>
                                         Choose your plane and fly it to the moon or through some pipes atleast. Avoid
                                         all contact to ensure your safety and reach for the top of the leaderboards.
-                                        
+
                                         Do you have what it takes to reach a score in above 50 or even in the hundreds ?
                                         Test it out now by playing Bartje De Vlieger.
                                     </p>
@@ -263,7 +267,7 @@ if (!isset($_SESSION['username'])) {
                                 <section class="text">
                                     <h3>Bart-Kaas-En-Eieren</h3>
                                     <p>
-                                        A game of the mind , outsmart your opponent or be crushed by their might. 
+                                        A game of the mind , outsmart your opponent or be crushed by their might.
                                         Do you have the mental capacity to win a game of Bart Kaas en Eieren.
 
                                         Be the first to place three of your chosen head in a row horizotally ,
@@ -280,10 +284,13 @@ if (!isset($_SESSION['username'])) {
                                 <section class="text">
                                     <h3>Tap The Gigachad</h3>
                                     <p>
-                                        Speed , Endurance , Focus and sheer fucking willpower. Those are the requirements
-                                        for completing a hard round of Tap the Gigachad , only after completing this hard
-                                        round can you be classified as a GigaChad. How do you complete it ? Simple you just
-                                        click the Gigachad as much as you can. Wait you're not a gigachad ? Don't worry 
+                                        Speed , Endurance , Focus and sheer fucking willpower. Those are the
+                                        requirements
+                                        for completing a hard round of Tap the Gigachad , only after completing this
+                                        hard
+                                        round can you be classified as a GigaChad. How do you complete it ? Simple you
+                                        just
+                                        click the Gigachad as much as you can. Wait you're not a gigachad ? Don't worry
                                         there are medium and easy modes for the lower humans like you.
                                     </p>
                                     <a href="../games/game4/" class="button">Play now!</a>
@@ -296,9 +303,9 @@ if (!isset($_SESSION['username'])) {
                                 <section class="text">
                                     <h3>GTA 6</h3>
                                     <p>
-                                        The story of two uniquely-different criminals as they commit daring and 
-                                        profitable heists across the sprawling city of Atwerp. Robin is an 
-                                        ex-con whose past catches up to him when previous crime partner Arne starts 
+                                        The story of two uniquely-different criminals as they commit daring and
+                                        profitable heists across the sprawling city of Atwerp. Robin is an
+                                        ex-con whose past catches up to him when previous crime partner Arne starts
                                         making a name for himself as a drug-lord of Mad Marnix .
                                     </p>
                                     <a href="../games/game5/" class="button">SPlay now!</a>

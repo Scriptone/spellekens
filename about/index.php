@@ -21,18 +21,18 @@ try {
     exit;
 }
 
-$name = isset($_POST['name']) ? (string)$_POST['name'] : '';
-$message = isset($_POST['message']) ? (string)$_POST['message'] : '';
-$mail = isset($_POST['mail']) ? (string)$_POST['mail'] : '';
-$game = isset($_POST['game']) ? (string)$_POST['game'] : '';
-$item = isset($_POST['item']) ? (string)$_POST['item'] : '';
-$phone = isset($_POST['phone']) ? (string)$_POST['phone'] : '';
+$name = isset($_POST['name']) ? (string) $_POST['name'] : '';
+$message = isset($_POST['message']) ? (string) $_POST['message'] : '';
+$mail = isset($_POST['mail']) ? (string) $_POST['mail'] : '';
+$game = isset($_POST['game']) ? (string) $_POST['game'] : '';
+$item = isset($_POST['item']) ? (string) $_POST['item'] : '';
+$phone = isset($_POST['phone']) ? (string) $_POST['phone'] : '';
 $msgName = '';
 $msgMail = '';
 $msgMessage = '';
 $msgGame = '';
 $msgItem = '';
-$msgPhone = '' ;
+$msgPhone = '';
 
 // form is sent: perform formchecking!
 if (isset($_POST['btnSubmit'])) {
@@ -75,7 +75,7 @@ if (isset($_POST['btnSubmit'])) {
     if ($allOk) {
         // build & execute prepared statement
         $stmt = $db->prepare('INSERT INTO messages (sender, mail,phone , game, item, message, added_on) VALUES (? , ?,? ,?,  ? , ?, ?)');
-        $stmt->execute(array($name, $mail,$phone, $game[0] ,$item[0] ,$message, (new DateTime())->format('Y-m-d H:i:s')));
+        $stmt->execute(array($name, $mail, $phone, $game[0], $item[0], $message, (new DateTime())->format('Y-m-d H:i:s')));
 
         // the query succeeded, redirect to this very same page
         if ($db->lastInsertId() !== 0) {
@@ -96,6 +96,14 @@ if (isset($_POST['btnSubmit'])) {
 <html lang="en">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EF4ZEFP8NR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EF4ZEFP8NR');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width">
     <link rel="icon" type="image/x-icon" href="../logo.png">
@@ -110,7 +118,7 @@ if (isset($_POST['btnSubmit'])) {
     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
         integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
     <title>About us</title>
-</head> 
+</head>
 
 <body>
     <header>
@@ -147,11 +155,10 @@ if (isset($_POST['btnSubmit'])) {
                 <div class="row align-items-center mb-5">
                     <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
                         <h2 class="font-weight-light">Who are we</h2>
-                        <p class="font-italic text-muted mb-4">We are team Spellekens also known as team eleven. 
-                            Together we relived our past by creating our own website filled with remixed versions of 
-                            games we played as children.  
-                        </p><a href="#"
-                            class="btn btn-light px-5 rounded-pill shadow-sm">Learn More</a>
+                        <p class="font-italic text-muted mb-4">We are team Spellekens also known as team eleven.
+                            Together we relived our past by creating our own website filled with remixed versions of
+                            games we played as children.
+                        </p><a href="#" class="btn btn-light px-5 rounded-pill shadow-sm">Learn More</a>
                     </div>
                     <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img
                             src="https://bootstrapious.com/i/snippets/sn-about/img-1.jpg" alt=""
@@ -163,21 +170,22 @@ if (isset($_POST['btnSubmit'])) {
                             class="img-fluid mb-4 mb-lg-0"></div>
                     <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
                         <h2 class="font-weight-light">Why this website</h2>
-                        <p class="font-italic text-muted mb-4">This concept was chosen because we all felt that this was the
-                            best way to work together. Everyone got to remix their own game and put their soul into it , the 
+                        <p class="font-italic text-muted mb-4">This concept was chosen because we all felt that this was
+                            the
+                            best way to work together. Everyone got to remix their own game and put their soul into it ,
+                            the
                             full website quickly followed.
-                        </p><a href="#"
-                            class="btn btn-light px-5 rounded-pill shadow-sm">Learn More</a>
+                        </p><a href="#" class="btn btn-light px-5 rounded-pill shadow-sm">Learn More</a>
                     </div>
                 </div>
                 <div class="row align-items-center mb-5 mt-5">
                     <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
                         <h2 class="font-weight-light">where can you find us?</h2>
-                        <p class="font-italic text-muted mb-4">you can find us at the Technologiecampus in Gent.</p><a href="#"
-                            class="btn btn-light px-5 rounded-pill shadow-sm">Learn More</a>
+                        <p class="font-italic text-muted mb-4">you can find us at the Technologiecampus in Gent.</p><a
+                            href="#" class="btn btn-light px-5 rounded-pill shadow-sm">Learn More</a>
                     </div>
-                    <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2" id="map"></div> 
-                    <script >
+                    <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2" id="map"></div>
+                    <script>
                         var map = L.map('map').setView([51.059726, 3.709114], 13);
                         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                             maxZoom: 19,
@@ -202,8 +210,7 @@ if (isset($_POST['btnSubmit'])) {
                     <!-- Team item-->
                     <div class="col-xl-3 col-sm-6 mb-5">
                         <div class="bg-white rounded shadow-sm py-5 px-4">
-                            <img
-                                src="../images/Arne.jpg" alt="" 
+                            <img src="../images/Arne.jpg" alt=""
                                 class="img-fluid rounded-pill mb-3 img-thumbnail shadow-sm">
                             <h5 class="mb-0">Arne Haers</h5><span class="small text-uppercase text-muted">CEO -
                                 Founder</span>
@@ -224,8 +231,7 @@ if (isset($_POST['btnSubmit'])) {
                     <!-- Team item-->
                     <div class="col-xl-3 col-sm-6 mb-5">
                         <div class="bg-white rounded shadow-sm py-5 px-4">
-                            <img
-                                src="../images/Phoenix.png" alt="" height="50" 
+                            <img src="../images/Phoenix.png" alt="" height="50"
                                 class="img-fluid rounded-pill mb-3 img-thumbnail shadow-sm">
                             <h5 class="mb-0">Phoenix</h5><span class="small text-uppercase text-muted">CEO -
                                 Founder</span>
@@ -245,9 +251,8 @@ if (isset($_POST['btnSubmit'])) {
 
                     <!-- Team item-->
                     <div class="col-xl-3 col-sm-6 mb-5">
-                        <div class="bg-white rounded shadow-sm py-5 px-4" >
-                            <img
-                                src="../images/robin.png" alt="" 
+                        <div class="bg-white rounded shadow-sm py-5 px-4">
+                            <img src="../images/robin.png" alt=""
                                 class="img-fluid rounded-pill mb-3 img-thumbnail shadow-sm">
                             <h5 class="mb-0">Robin</h5><span class="small text-uppercase text-muted">CEO -
                                 Founder</span>
@@ -268,8 +273,7 @@ if (isset($_POST['btnSubmit'])) {
                     <!-- Team item-->
                     <div class="col-xl-3 col-sm-6 mb-5">
                         <div class="bg-white rounded shadow-sm py-5 px-4">
-                            <img
-                                src="../images/Anuwat.jpg" alt="" 
+                            <img src="../images/Anuwat.jpg" alt=""
                                 class="img-fluid rounded-pill mb-3 img-thumbnail shadow-sm">
                             <h5 class="mb-0">Anuwat</h5><span class="small text-uppercase text-muted">CEO -
                                 Founder</span>
@@ -307,78 +311,94 @@ if (isset($_POST['btnSubmit'])) {
                             Thanks for filling out the form!
                         </div>
 
-                        <form class="mbr-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" data-form-title="Contact-form" >
+                        <form class="mbr-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"
+                            data-form-title="Contact-form">
                             <div class="row row-sm-offset">
                                 <div class="col-md-4 multi-horizontal" data-for="name">
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7"
-                                               for="name">Name</label>
+                                            for="name">Name</label>
                                         <input type="text" class="form-control" name="name" id="name"
-                                               value="<?php echo htmlentities($name); ?>" >
-                                        <span class="text-danger"><?php echo $msgName; ?></span>
-                    
+                                            value="<?php echo htmlentities($name); ?>">
+                                        <span class="text-danger">
+                                            <?php echo $msgName; ?>
+                                        </span>
+
                                     </div>
                                 </div>
                                 <div class="col-md-4 multi-horizontal" data-for="email">
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7"
-                                               for="mail">Email</label>
-                                        <input type="email" class="form-control" name="mail"
-                                              id="mail" value="<?php echo htmlentities($mail); ?>" >
-                                        <span class="text-danger"><?php echo $msgMail; ?></span>
+                                            for="mail">Email</label>
+                                        <input type="email" class="form-control" name="mail" id="mail"
+                                            value="<?php echo htmlentities($mail); ?>">
+                                        <span class="text-danger">
+                                            <?php echo $msgMail; ?>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="col-md-4 multi-horizontal" data-for="phone">
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7"
-                                               for="phone">Phone</label>
-                                        <input type="tel" class="form-control" name="phone"
-                                               id="phone" value="<?php echo htmlentities($phone); ?>" >
-                                        <span class="text-danger"><?php echo $msgPhone; ?></span>
+                                            for="phone">Phone</label>
+                                        <input type="tel" class="form-control" name="phone" id="phone"
+                                            value="<?php echo htmlentities($phone); ?>">
+                                        <span class="text-danger">
+                                            <?php echo $msgPhone; ?>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="mt-3 mxb-3">
                                 <select name="game" class="form-select ">
-                                    <option value="1" <?php echo ($game == 'game 1') ? 'checked' : '' ?>>Odisee Invaders</option>
-                                    <option value="2"  <?php echo ($game == 'game 2') ? 'checked' : '' ?>>Bartje de Vlieger</option>
-                                    <option value="3"   <?php echo ($game == 'game 3') ? 'checked' : '' ?>>Bart Kaas en Eieren</option>
-                                    <option value="4"<?php echo ($game == 'game 4') ? 'checked' : '' ?>>Tap the Gigachad</option>
+                                    <option value="1" <?php echo ($game=='game 1') ? 'checked' : '' ?>>Odisee Invaders
+                                    </option>
+                                    <option value="2" <?php echo ($game=='game 2') ? 'checked' : '' ?>>Bartje de Vlieger
+                                    </option>
+                                    <option value="3" <?php echo ($game=='game 3') ? 'checked' : '' ?>>Bart Kaas en
+                                        Eieren</option>
+                                    <option value="4" <?php echo ($game=='game 4') ? 'checked' : '' ?>>Tap the Gigachad
+                                    </option>
                                 </select>
                             </div>
                             <fieldset>
                                 <legend>select the correct item</legend>
                                 <div class="form-check mb-3">
                                     <input type="radio" class="form-check-input" name="item" id="item_bug" value="bug"
-                                        <?php echo ($item == 'bug') ? 'checked' : '' ?> />
-                                    <label class="form-check-label"  for="item_bug">bug</label>
+                                        <?php echo ($item=='bug') ? 'checked' : '' ?> />
+                                    <label class="form-check-label" for="item_bug">bug</label>
                                 </div>
                                 <div class="form-check mb-3">
-                                    <input type="radio" class="form-check-input" name="item" id="item_error" value="error"
-                                        <?php echo ($item== 'error') ? 'checked' : '' ?> />
-                                    <label  class="form-check-label"  for="item_error">error</label>
+                                    <input type="radio" class="form-check-input" name="item" id="item_error"
+                                        value="error" <?php echo ($item =='error') ? 'checked' : '' ?> />
+                                    <label class="form-check-label" for="item_error">error</label>
                                 </div>
                                 <div class="form-check mb-3">
-                                    <input type="radio" class="form-check-input" name="item" id="item_feedback" value="feedback"
-                                        <?php echo ($item == 'feedback') ? 'checked' : '' ?> />
-                                    <label class="form-check-label"  for="item_feedback">feedback</label>
+                                    <input type="radio" class="form-check-input" name="item" id="item_feedback"
+                                        value="feedback" <?php echo ($item=='feedback') ? 'checked' : '' ?> />
+                                    <label class="form-check-label" for="item_feedback">feedback</label>
                                 </div>
                                 <div class="form-check mb-3">
-                                    <input type="radio" class="form-check-input" name="item" id="item_other" value="other"
-                                        <?php echo ($item == 'other') ? 'checked' : '' ?> />
-                                    <label class="form-check-label"  for="item_other">other</label>
+                                    <input type="radio" class="form-check-input" name="item" id="item_other"
+                                        value="other" <?php echo ($item=='other') ? 'checked' : '' ?> />
+                                    <label class="form-check-label" for="item_other">other</label>
                                 </div>
-                                <span class="text-danger"><?php echo $msgItem; ?></span>
+                                <span class="text-danger">
+                                    <?php echo $msgItem; ?>
+                                </span>
                             </fieldset>
                             <div class="form-group" data-for="message">
                                 <label class="form-control-label mbr-fonts-style display-7"
-                                       for="message-contactform">Message</label>
+                                    for="message-contactform">Message</label>
                                 <textarea type="text" class="form-control" name="message" rows="7"
-                                         id="message"><?php echo htmlentities($message); ?></textarea>
-                                <span class="text-danger"><?php echo $msgMessage; ?></span>
+                                    id="message"><?php echo htmlentities($message); ?></textarea>
+                                <span class="text-danger">
+                                    <?php echo $msgMessage; ?>
+                                </span>
                             </div>
-                            <input class=" mt-3 btn btn-light px-5 rounded-pill shadow-sm" type="submit" id="btnSubmit" name="btnSubmit" value="SEND FORM"/>
-                    
+                            <input class=" mt-3 btn btn-light px-5 rounded-pill shadow-sm" type="submit" id="btnSubmit"
+                                name="btnSubmit" value="SEND FORM" />
+
                         </form>
                     </div>
                 </div>
