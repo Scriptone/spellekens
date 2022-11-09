@@ -107,3 +107,18 @@ body {
 .input-groep .btn svg {
     fill: #FFF;
 }
+ .animation{
+    font-size: 3rem;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-color);
+    background: url(./image/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 15s linear infinite;
+    text-align: center;
+ }
+ @keyframes back{
+    100%{
+        background: 2000px 0;
+    }
+ }

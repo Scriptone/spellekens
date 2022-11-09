@@ -10,10 +10,10 @@
     --cell-size: 100px;
 
     /* images */
-    --bart : url('../images/tic-tac-toe/bart.png');
-    --peter-2: url('../images/tic-tac-toe/peter.png');
-    --davy: url('../images/tic-tac-toe/davy.png');
-    --peter: url('../images/tic-tac-toe/peter2.png');
+    --bart : url('./assets/bart.png');
+    --peter-2: url('./assets/peter.png');
+    --davy: url('./assets/davy.png');
+    --peter: url('./assets/peter2.png');
 }
 
 * > * {
