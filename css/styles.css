@@ -299,6 +299,21 @@ main .search {
     color: #fefefe;
 }
 
+@media (max-width: 60rem) {
+    .game, .trailer {
+        flex-flow: wrap row;
+        height: 44rem;
+    }
+
+    .slider {
+        height: 54rem;
+    }
+
+    .slides {
+        height: 50rem;
+    }
+}
+
 .game h3 {
     margin: 0 0;
     margin-bottom: .5rem;
