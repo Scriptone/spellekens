@@ -1,81 +1,103 @@
-main {
-    width: 100vw;
-    height: 100vh;
-    font-family: sans-serif;
-    padding: 10em 10em;
-    background: url(./bg.jpg);
-    opacity: 0.5;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: 100% 20%;
-    background-size: cover;
+.container {
+    --light-color: #fff;
+    height: fit-content;
+    width: 25rem;
+    background: var(--light-color);
+    position: fixed;
+    bottom: 3rem;
+    border-radius: 1rem;
+    right: 1rem;
+    box-shadow: 0 0 1rem #000A;
+    
+}
+
+.chat-header {
+    height: 4rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.glass {
-    width: 500px;
-    height: 400px;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 50px;
-    color: #000;
-    border-radius: 9px;
-    backdrop-filter: blur(50px);
-    border: 2px solid transparent;
-    background-clip: padding-box;
-    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
-    line-height: 1.5;
-    transform: translatey(-5%);
-    transition: transform 0.5s;
-}
-
-.glass-1 {
-    width: 500px;
-    height: 400px;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 50px;
-    color: rgb(122, 82, 82);
-    border-radius: 9px;
-    backdrop-filter: blur(50px);
-    border: 2px solid transparent;
-    background-clip: padding-box;
-    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
-    line-height: 1.5;
-    transform: translatey(-5%);
-    transition: transform 0.5s;
-    font-size: 1.7rem;
-}
-
-.glass h1 {
+    padding: 0 2rem;
+    border-radius: 1rem 1rem 0 0;
+    background-color: #209a7d;
+    color: var(--light-color);
     font-size: 1.5rem;
-    text-align: center;
 }
 
-.glass h2 {
-    font-size: 1rem;
-    margin-top: 20px;
+.chat-header .logo {
+    height: 2.5rem;
+    box-shadow: 0 0 1rem #000A;
+    border-radius: 1rem;
 }
 
-.input {
+.chat-header img {
+    height: 100%;
     width: 100%;
-    height: 70px;
-    overflow: hidden;
-    margin-top: 40px;
 }
 
-.input input {
-    width: 100%;
-    height: 70px;
+.chat-header .title {
+    padding-left: 1rem;
+}
+
+.chat-body {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding: .7rem;
+    align-items: flex-end;
+    overflow-y: auto;
+    
+}
+
+.chat-input {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+
+.input-sec {
+    flex: 9;
+}
+
+.send {
+    position: relative;
+    display: inline-block;
+    background-color: #21a687;
+    color: #FFF;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    
+    border: .2rem solid transparent;
+    font-weight: bold;
+    padding: .4rem 1rem;
+    border-radius: 2rem;
+    margin: 0;
+    margin-right: 2rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+#txtInput {
+    line-height: 30px;
+    padding: 8px 10px;
     border: none;
-    padding-left: 30px;
-    padding-top: 0;
     outline: none;
-    font-size: 1.5rem;
-    border-radius: 20px;
+    caret-color: black;
+    font-size: 1rem;
+    width: 100%;
 }
 
-.glass p {
-    font-size: 1.6rem;
-    margin-top: 30px;
+.chatbot-message,
+.user-message {
+    padding: 8px;
+    background: #ccc;
+    margin: 5px;
+    width: max-content;
+    border-radius: 10px 3px 10px 10px;
+}
+
+.chatbot-message {
+    background: #0652c0;
+    color: var(--light-color);
+    align-self: flex-start;
+    border-radius: 10px 10px 3px 10px;
 }

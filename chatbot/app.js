@@ -1,17 +1,79 @@
-function talk() {
-    var know = {
-        "Who are you": "Hello, Codewith_random here ",
-        "How are you": "Good :)",
-        "What can i do for you": "Please Give us A Follow & Like.",
-        "Your followers": "I have my family of 5000 members, i don't have follower ,have supportive Famiy ",
-        "ok": "Thank You So Much ",
-        "Bye": "Okay! Will meet soon.."
-    };
-    var user = document.getElementById('userBox').value;
-    document.getElementById('chatLog').innerHTML = user + "<br>";
-    if (user in know) {
-        document.getElementById('chatLog').innerHTML = know[user] + "<br>";
-    } else {
-        document.getElementById('chatLog').innerHTML = "Sorry,I didn't understand <br>";
+const chatBody = document.querySelector(".chat-body");
+const txtInput = document.querySelector("#txtInput");
+const send = document.querySelector(".send");
+
+send.addEventListener("click", () => renderUserMessage());
+
+txtInput.addEventListener("keyup", (event) => {
+    if (event.keyCode === 13) {
+        renderUserMessage();
     }
-}
+});
+
+const renderUserMessage = () => {
+    const userInput = txtInput.value;
+    renderMessageEle(userInput, "user");
+    txtInput.value = "";
+    setTimeout(() => {
+        renderChatbotResponse(userInput);
+        setScrollPosition();
+    }, 600);
+};
+
+const renderChatbotResponse = (userInput) => {
+    const res = getChatbotResponse(userInput);
+    renderMessageEle(res);
+};
+
+const renderMessageEle = (txt, type) => {
+    let className = "user-message";
+    if (type !== "user") {
+        className = "chatbot-message";
+    }
+    const messageEle = document.createElement("div");
+    const txtNode = document.createTextNode(txt);
+    messageEle.classList.add(className);
+    messageEle.append(txtNode);
+    chatBody.append(messageEle);
+};
+
+const answers = [
+    "It is certain",
+    "It is decidedly so",
+    "Without a doubt",
+    "Yes - definitely",
+    "You may rely on it",
+    "As I see it, yes",
+    "Most likely",
+    "Outlook good",
+    "Yes", "Signs point to yes",
+    "Don't count on it",
+    "My reply is no",
+    "My sources say no",
+    "Outlook not so good",
+    "Very doubtful",
+    "Reply hazy, try again",
+    "Ask again later",
+    "Better not tell you now",
+    "Cannot predict now",
+    "Concentrate and ask again"
+];
+const getChatbotResponse = (userInput) => {
+    return responseObj[userInput.toLowerCase()] == undefined
+        ? answers[Math.floor(Math.random() * Math.floor(answers.length))]
+        : responseObj[userInput.toLowerCase()];
+};
+
+const setScrollPosition = () => {
+    if (chatBody.scrollHeight > 0) {
+        chatBody.scrollTop = chatBody.scrollHeight;
+    }
+};
+
+
+const responseObj = {
+    hello: "Hey ! How are you doing ?",
+    hey: "Hey! What's Up",
+    today: new Date().toDateString(),
+    time: new Date().toLocaleTimeString(),
+};
