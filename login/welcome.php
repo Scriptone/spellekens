@@ -22,7 +22,7 @@ if (!isset($_SESSION['username'])) {
     <link href="../css/styles.css" rel="stylesheet">
     
     <!-- Welcome css -->
-    <link href="style.css" rel="stylesheet">
+    <link href="./css/opmaak.css" rel="stylesheet">
 
     <script src="../JS_Bestanden/slider.js"></script>
 
