@@ -56,11 +56,11 @@ const answers = [
     "Ask again later",
     "Better not tell you now",
     "Cannot predict now",
-    "Concentrate and ask again",
-    "Yes daddy",
     "You're not old enough to learn that information",
     "Might be the case",
-    "Might now be the case"
+    "Might now be the case",
+    "Concentrate and ask again",
+    "Yes daddy"
 ];
 const getChatbotResponse = (userInput) => {
     return responseObj[userInput.toLowerCase()] == undefined
