@@ -109,7 +109,6 @@ body {
 }
  .animation{
     font-size: 3rem;
-    color: transparent;
     -webkit-text-stroke: 1px var(--text-color);
     background: url(./image/back.png);
     -webkit-background-clip: text;
