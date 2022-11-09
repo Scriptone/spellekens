@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EF4ZEFP8NR"></script>
@@ -75,8 +75,8 @@ if (isset($_POST['submit'])) {
 			<h1><img src="../images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
 		</a>
 		<button class="hamburger-menu" title="Toggle" onclick="menuToggle()">
-            <i class="fa fa-bars"></i>
-        </button>
+			<i class="fa fa-bars"></i>
+		</button>
 		<nav>
 			<ul class="nav">
 				<li><a href="../"><i class="fa fa-home"></i>Home</a></li>
@@ -123,7 +123,7 @@ if (isset($_POST['submit'])) {
 
 			<div class="input-groep">
 
-				<button name="home" class="btnHome"> <a href="#">Home</a></button>
+				<a href="#" class="btnHome">Home</a>
 			</div>
 		</form>
 

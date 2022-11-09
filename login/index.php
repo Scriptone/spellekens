@@ -90,19 +90,18 @@ if (isset($_POST['submit'])) {
 						value="<?php echo $_POST['password']; ?>" required>
 				</div>
 				<div class="input-groep">
-					<button name="submit" class="btn">
-						Login
+					<button name="submit" class="btn">Login</button>
 				</div>
 				<p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
 				<div class="input-groep">
 
-					<button name="home" class="btnHome"> <a href="../">Home</a></button>
+					<a href="../" class="btnHome">Home</a>
 				</div>
 
 			</form>
 		</div>
 		<div id="cookiePopup" class="hide">
-			<img src="./cookies/img/cookie.png" />
+			<img src="./cookies/img/cookie.png" alt = "cookies">
 			<p>
 				Our website uses cookies to provide your browsing experience and
 				relevant information. Before continuing to use our website, you agree &

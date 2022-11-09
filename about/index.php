@@ -109,7 +109,7 @@ if (isset($_POST['btnSubmit'])) {
     <link rel="icon" type="image/x-icon" href="../logo.png">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -212,7 +212,7 @@ if (isset($_POST['btnSubmit'])) {
                         <div class="bg-white rounded shadow-sm py-5 px-4">
                             <img src="../images/Arne.jpg" alt=""
                                 class="img-fluid rounded-pill mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Arne Haers</h5><span class="small text-uppercase text-muted">CEO -
+                            <h3 class="mb-0">Arne Haers</h3><span class="small text-uppercase text-muted">CEO -
                                 Founder</span>
                             <ul class="social mb-0 list-inline mt-3">
                                 <li class="list-inline-item"><a href="#" title="link" class="social-link"><i
@@ -233,7 +233,7 @@ if (isset($_POST['btnSubmit'])) {
                         <div class="bg-white rounded shadow-sm py-5 px-4">
                             <img src="../images/Phoenix.png" alt="" height="50"
                                 class="img-fluid rounded-pill mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Phoenix</h5><span class="small text-uppercase text-muted">CEO -
+                            <h3 class="mb-0">Phoenix</h3><span class="small text-uppercase text-muted">CEO -
                                 Founder</span>
                             <ul class="social mb-0 list-inline mt-3">
                                 <li class="list-inline-item"><a href="#" title="link" class="social-link"><i
@@ -254,7 +254,7 @@ if (isset($_POST['btnSubmit'])) {
                         <div class="bg-white rounded shadow-sm py-5 px-4">
                             <img src="../images/robin.png" alt=""
                                 class="img-fluid rounded-pill mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Robin</h5><span class="small text-uppercase text-muted">CEO -
+                            <h3 class="mb-0">Robin</h3><span class="small text-uppercase text-muted">CEO -
                                 Founder</span>
                             <ul class="social mb-0 list-inline mt-3">
                                 <li class="list-inline-item"><a href="#" title="link" class="social-link"><i
@@ -275,7 +275,7 @@ if (isset($_POST['btnSubmit'])) {
                         <div class="bg-white rounded shadow-sm py-5 px-4">
                             <img src="../images/Anuwat.jpg" alt=""
                                 class="img-fluid rounded-pill mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Anuwat</h5><span class="small text-uppercase text-muted">CEO -
+                            <h3 class="mb-0">Anuwat</h3><span class="small text-uppercase text-muted">CEO -
                                 Founder</span>
                             <ul class="social mb-0 list-inline mt-3">
                                 <li class="list-inline-item"><a href="#" title="link" class="social-link"><i
