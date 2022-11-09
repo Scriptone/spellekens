@@ -44,7 +44,7 @@ if (!isset($_SESSION['username'])) {
         })(window, document, 'script', 'dataLayer', 'GTM-PFK425');
     </script>
     <header>
-        <a href="./" class="logo">
+        <a href="../" class="logo">
             <h1><img src="../images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
         </a>
         <button class="hamburger-menu" title="Toggle" onclick="menuToggle()">
@@ -67,7 +67,7 @@ if (!isset($_SESSION['username'])) {
                 </li>
             </ul>
         </nav>
-        <script src="./JS_Bestanden/navline.js"></script>
+        <script src="../JS_Bestanden/navline.js"></script>
     </header>
 
     <main>
