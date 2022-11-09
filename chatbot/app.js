@@ -76,6 +76,7 @@ const setScrollPosition = () => {
 const responseObj = {
     hello: "Hey ! How are you doing ?",
     hey: "Hey! What's Up",
+    Alone: "Gimme 10 minutes to get there",
     today: new Date().toDateString(),
     time: new Date().toLocaleTimeString(),
 };
