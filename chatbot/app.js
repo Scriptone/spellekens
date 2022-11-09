@@ -58,7 +58,9 @@ const answers = [
     "Cannot predict now",
     "Concentrate and ask again",
     "Yes daddy",
-    "You're not old enough to learn that information"
+    "You're not old enough to learn that information",
+    "Might be the case",
+    "Might now be the case"
 ];
 const getChatbotResponse = (userInput) => {
     return responseObj[userInput.toLowerCase()] == undefined
