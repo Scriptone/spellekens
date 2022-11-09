@@ -23,10 +23,10 @@ function startGame(){
         cell.addEventListener('click', handleClick, { once: true })
     })
 
-    GAME.startWindow.classList.add("hide");
-    GAME.winEl.classList.remove("show");
-    GAME.drawEl.classList.remove("show");
-    GAME.winnerImg.children.length ? GAME.winnerImg.removeChild(GAME.winner) : null;
+   GAME.startWindow.classList.add("hide");
+   GAME.winEl.classList.remove("show");
+   GAME.drawEl.classList.remove("show");
+   GAME.winnerImg.children.length ? GAME.winnerImg.removeChild(GAME.winner) : null; 
 }
 
 // handler onclick function of the cell
@@ -37,25 +37,25 @@ function handleClick(e){
 
     /** check winner */
     let flag = checkWin(currentClass, GAME.blockElements).filter((win, index) => {
-        if (win){
+       if (win){
+        
+        // add green background to the winner 
+        WIN_COMBINATIONS[index].map(i => {
+            GAME.blockElements[i].classList.add('win');
+        })
 
-            // add green background to the winner
-            WIN_COMBINATIONS[index].map(i => {
-                GAME.blockElements[i].classList.add('win');
-            })
-
-            // set the winner
-            GAME.winner = GAME.blockElements[WIN_COMBINATIONS[index][0]].cloneNode(true);
-            return win !== false;
-        }
+        // set the winner
+        GAME.winner = GAME.blockElements[WIN_COMBINATIONS[index][0]].cloneNode(true);
+        return win !== false;
+       }
     });
-
+    
     //  check for win or draw
     if (flag.length){
         endGame(false, GAME.winEl, GAME.drawEl);
         GAME.winnerImg.append(GAME.winner);
     }else if(isDraw(flag)){
-        endGame(true, GAME.winEl, GAME.drawEl);
+       endGame(true, GAME.winEl, GAME.drawEl);
     }
 
 
