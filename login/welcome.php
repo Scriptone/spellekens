@@ -26,6 +26,10 @@ if (!isset($_SESSION['username'])) {
 
     <!-- Cookies css -->
     <link href="../cookies/style.css" rel="stylesheet">
+    
+        <!--Link-Font-Awesome(icon)-->
+    <script src="https://kit.fontawesome.com/e3ad0412a5.js" crossorigin="anonymous"></script></head>
+
     <title>Spellekens</title>
 </head>
 
