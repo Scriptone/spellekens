@@ -52,10 +52,10 @@ if (!isset($_SESSION['username'])) {
         </button>
         <nav>
             <ul class="nav">
-                <li><a href="./" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="./about"><i class="fa fa-user"></i>About us</a></li>
-                <li><a href="./games"><i class="fa fa-folder"></i>Games</a></li>
-                <li><a href="./chatbot"><i class="fa fa-question-circle"></i>Help desk</a></li>
+                <li><a href="../" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="../about"><i class="fa fa-user"></i>About us</a></li>
+                <li><a href="../games"><i class="fa fa-folder"></i>Games</a></li>
+                <li><a href="../chatbot"><i class="fa fa-question-circle"></i>Help desk</a></li>
             </ul>
             <div class="nav-line"></div>
             <ul class="help">
@@ -76,7 +76,7 @@ if (!isset($_SESSION['username'])) {
             <input type="text" class="search-input" placeholder="Search for game">
         </section>
         <section class="trailer-container">
-            <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
+            <h1 class="my-5">Hi <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>, Welcome to our site.</h1>
             <h2>Game trailers</h2>
             <section class="trailers">
 
@@ -235,9 +235,9 @@ if (!isset($_SESSION['username'])) {
                                         Blast your way past five exciting levels rising in dificulty and eventually try
                                         your best in a 1v1 faceoff with the dangerous minigun.
                                     </p>
-                                    <a href="./games/game1/" class="button">Play now!</a>
+                                    <a href="../games/game1/" class="button">Play now!</a>
                                 </section>
-                                <img src="images/OdiseeInvaders.png" alt="">
+                                <img src="../images/OdiseeInvaders.png" alt="">
                             </section>
                         </div>
                         <div class="slide">
@@ -251,9 +251,9 @@ if (!isset($_SESSION['username'])) {
                                         Do you have what it takes to reach a score in above 50 or even in the hundreds ?
                                         Test it out now by playing Bartje De Vlieger.
                                     </p>
-                                    <a href="./games/game2/" class="button">Play now!</a>
+                                    <a href="../games/game2/" class="button">Play now!</a>
                                 </section>
-                                <img src="images/bartjedevlieger.png" alt="">
+                                <img src="../images/bartjedevlieger.png" alt="">
                             </section>
                         </div>
                         <div class="slide">
@@ -268,9 +268,9 @@ if (!isset($_SESSION['username'])) {
                                         vertically or diagonal to take home the victory. Chose between four different
                                         characters to represent yourself in the Bart Kaas en Eieren arena.
                                     </p>
-                                    <a href="./games/game3/" class="button">Play now!</a>
+                                    <a href="../games/game3/" class="button">Play now!</a>
                                 </section>
-                                <img src="images/TicTacToe.png" alt="">
+                                <img src="../images/TicTacToe.png" alt="">
                             </section>
                         </div>
                         <div class="slide">
@@ -284,9 +284,9 @@ if (!isset($_SESSION['username'])) {
                                         click the Gigachad as much as you can. Wait you're not a gigachad ? Don't worry 
                                         there are medium and easy modes for the lower humans like you.
                                     </p>
-                                    <a href="./games/game4/" class="button">Play now!</a>
+                                    <a href="../games/game4/" class="button">Play now!</a>
                                 </section>
-                                <img src="images/tapchad.png" alt="">
+                                <img src="../images/tapchad.png" alt="">
                             </section>
                         </div>
                         <div class="slide">
@@ -299,9 +299,9 @@ if (!isset($_SESSION['username'])) {
                                         ex-con whose past catches up to him when previous crime partner Arne starts 
                                         making a name for himself as a drug-lord of Mad Marnix .
                                     </p>
-                                    <a href="./games/game5/" class="button">SPlay now!</a>
+                                    <a href="../games/game5/" class="button">SPlay now!</a>
                                 </section>
-                                <img src="images/gta6.png" alt="">
+                                <img src="../images/gta6.png" alt="">
                             </section>
                         </div>
                         <div class="slide">
@@ -311,9 +311,9 @@ if (!isset($_SESSION['username'])) {
                                     <p>
                                         A long relaxing shadow until it becomes faster.
                                     </p>
-                                    <a href="./games/game6/" class="button">Play now!</a>
+                                    <a href="../games/game6/" class="button">Play now!</a>
                                 </section>
-                                <img src="images/Longshadow.png" alt="">
+                                <img src="../images/Longshadow.png" alt="">
                             </section>
                         </div>
                         <div class="navigation-auto">
@@ -340,17 +340,17 @@ if (!isset($_SESSION['username'])) {
         </section>
         <!-- Cookies -->
         <div id="cookiePopup" class="hide">
-            <img src="./cookies/img/cookie.png" alt="cookies">
+            <img src="../cookies/img/cookie.png" alt="cookies">
             <p>
                 Our website uses cookies to provide your browsing experience and
                 relevant information. Before continuing to use our website, you agree &
-                accept of our <a href="./cookies/cookie_policy/index.html">Cookie Policy & Privacy.</a>
+                accept of our <a href="../cookies/cookie_policy/index.html">Cookie Policy & Privacy.</a>
             </p>
             <button id="acceptCookie">Accept</button>
         </div>
         <!-- Cookies -->
         <!-- Script -->
-        <script src="./cookies/script.js"></script>
+        <script src="../cookies/script.js"></script>
     </main>
 
     <footer>
