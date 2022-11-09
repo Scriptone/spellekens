@@ -149,7 +149,7 @@ if (isset($_POST['btnSubmit'])) {
                         <h2 class="font-weight-light">Who are we</h2>
                         <p class="font-italic text-muted mb-4">We are team Spellekens also known as team eleven. 
                             Together we relived our past by creating our own website filled with remixed versions of 
-                            games we played as children    
+                            games we played as children.  
                         </p><a href="#"
                             class="btn btn-light px-5 rounded-pill shadow-sm">Learn More</a>
                     </div>
