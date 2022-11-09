@@ -275,6 +275,11 @@ body {
 			color: #152f4f;
 			display: block;
 			text-align: center;
+			-webkit-user-select: none;
+      	       	        -webkit-touch-callout: none;
+       			-moz-user-select: none;
+      		        -ms-user-select: none;
+        		user-select: none;
 		}
 
 		.grond {
@@ -310,7 +315,7 @@ body {
 			transition-duration: 1s;
 		}
 	.unseclect{
-		        -webkit-user-select: none;
+	-webkit-user-select: none;
         -webkit-touch-callout: none;
         -moz-user-select: none;
         -ms-user-select: none;
