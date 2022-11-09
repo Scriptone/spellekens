@@ -300,17 +300,8 @@ main .search {
 }
 
 @media (max-width: 60rem) {
-    .game, .trailer {
-        flex-flow: wrap row;
-        height: 44rem;
-    }
-
-    .slider {
-        height: 54rem;
-    }
-
-    .slides {
-        height: 50rem;
+    .game-container ul {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -455,6 +446,11 @@ main .search {
     padding: 0;
 }
 
+@media (max-width: 60rem) {
+    .game-container ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 .game-container ul li section {
     width: 100%;
     height: 15rem;
