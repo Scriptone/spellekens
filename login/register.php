@@ -44,6 +44,12 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="icon" type="image/x-icon" href="../logo.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -53,6 +59,32 @@ if (isset($_POST['submit'])) {
 	<title>Spellekens</title>
 </head>
 <body>
+	<header>
+		<a href="../" class="logo">
+			<h1><img src="../images/logo.png" alt="Logo spellekens" width="100"> Spellekens.be</h1>
+		</a>
+		<nav>
+			<ul class="nav">
+				<li><a href="../"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="../about/"><i class="fa fa-user"></i>About us</a></li>
+				<li><a href="./"><i class="fa fa-folder"></i>Games</a></li>
+				<li><a href="../chatbot"><i class="fa fa-question-circle"></i>Help desk</a></li>
+			</ul>
+			<div class="nav-line"></div>
+			<ul class="help">
+				<li>
+					<a href="../about#contactform" class="button">Contact</a>
+				</li>
+				<li>
+					<a href="../login/index.php" class="button login"><i class="fa fa-user"></i>Login</a>
+				</li>
+			</ul>
+
+		</nav>
+		<script src="../JS_Bestanden/navline.js"></script>
+	</header>
+	
+	
 	<div class="container">
 		<form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
