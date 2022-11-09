@@ -59,7 +59,7 @@ if (!isset($_SESSION['username'])) {
                     <a href="../index.html" class="button">Contact</a>
                 </li>
                 <li>
-                    <a href="../index.php" class="button login"><i class="fa fa-user"></i>Logout</a>
+                    <a href="../index.php" class="button login"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
                 </li>
             </ul>
         </nav>
@@ -72,6 +72,7 @@ if (!isset($_SESSION['username'])) {
             <input type="text" class="search-input" placeholder="Search for game">
         </section>
         <section class="trailer-container">
+            <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
             <h2>Game trailers</h2>
             <section class="trailers">
 
