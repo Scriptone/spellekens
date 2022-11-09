@@ -336,10 +336,12 @@ if (isset($_POST['btnSubmit'])) {
                             </div>
                             <div class="mt-3 mxb-3">
                                 <select name="game" class="form-select ">
-                                    <option value="1" <?php echo ($game == 'game 1') ? 'checked' : '' ?>>game1</option>
-                                    <option value="2"  <?php echo ($game == 'game 2') ? 'checked' : '' ?>>game2</option>
-                                    <option value="3"   <?php echo ($game == 'game 3') ? 'checked' : '' ?>>game3</option>
-                                    <option value="4"<?php echo ($game == 'game 4') ? 'checked' : '' ?>>game4</option>
+                                    <option value="1" <?php echo ($game == 'game 1') ? 'checked' : '' ?>>Odisee Invaders</option>
+                                    <option value="2"  <?php echo ($game == 'game 2') ? 'checked' : '' ?>>Bartje de Vlieger</option>
+                                    <option value="3"   <?php echo ($game == 'game 3') ? 'checked' : '' ?>>Bart Kaas en Eieren</option>
+                                    <option value="4"<?php echo ($game == 'game 4') ? 'checked' : '' ?>>Tap the Gigachad</option>
+                                    <option value="5"<?php echo ($game == 'game 5') ? 'checked' : '' ?>>Gta 6</option>
+                                    <option value="6"<?php echo ($game == 'game 6') ? 'checked' : '' ?>>Longshadow</option>
                                 </select>
                             </div>
                             <fieldset>
