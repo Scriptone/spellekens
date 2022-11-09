@@ -340,8 +340,6 @@ if (isset($_POST['btnSubmit'])) {
                                     <option value="2"  <?php echo ($game == 'game 2') ? 'checked' : '' ?>>Bartje de Vlieger</option>
                                     <option value="3"   <?php echo ($game == 'game 3') ? 'checked' : '' ?>>Bart Kaas en Eieren</option>
                                     <option value="4"<?php echo ($game == 'game 4') ? 'checked' : '' ?>>Tap the Gigachad</option>
-                                    <option value="5"<?php echo ($game == 'game 5') ? 'checked' : '' ?>>Gta 6</option>
-                                    <option value="6"<?php echo ($game == 'game 6') ? 'checked' : '' ?>>Longshadow</option>
                                 </select>
                             </div>
                             <fieldset>
