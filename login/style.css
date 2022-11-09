@@ -109,13 +109,14 @@ body {
 }
  .animation{
     font-size: 3rem;
-    color: transparent;
+    color: #152f4f;
     -webkit-text-stroke: 1px #152f4f;
     background: url(./image/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 15s linear infinite;
     text-align: center;
+     padding: 1rem;
  }
  @keyframes back{
     100%{
