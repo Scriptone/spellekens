@@ -58,7 +58,7 @@ const answers = [
     "Cannot predict now",
     "You're not old enough to learn that information",
     "Might be the case",
-    "Might now be the case",
+    "Might not be the case",
     "Concentrate and ask again",
     "Yes daddy"
 ];
