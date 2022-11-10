@@ -202,7 +202,7 @@ if (isset($_POST['btnSubmit'])) {
                 <div class="row mb-4">
                     <div class="col-lg-5">
                         <h2 class="display-4 font-weight-light">Our team</h2>
-                        <p class="font-italic text-muted">Meet our amazing group memners.</p>
+                        <p class="font-italic text-muted">Meet our amazing group members.</p>
                     </div>
                 </div>
 
